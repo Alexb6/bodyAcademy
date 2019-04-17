@@ -1,0 +1,86 @@
+// =============================================================================
+// Variables
+// =============================================================================
+
+// Colors 
+// --------------------
+$anthracite: #242424;
+$softBlack: #212529;
+$gray: #B2B2B2;
+$grayVeryLight: #F7F7F7;
+$primary: #006fba;
+$primaryActive : #0098fe;
+$secondaryLight: #ffd199;
+$secondary: #e3881b;
+$ternary: #511922;
+
+// Fonts 
+// --------------------
+$fontMenu: Fahkwang, sans-serif;
+$fontTitre: Poppins, sans-serif;
+$fontTexte: Raleway, sans-serif;
+$fontScript: Scriptina, sans-serif;
+
+
+// Mixins
+// --------------------
+
+// Breakpoints
+@mixin breakpoint ($screenWidth) {
+    @if $screenWidth == smallScreenSE {
+        @media screen and (max-width : 360px) { @content; }
+    }
+    @if $screenWidth == middleScreen {
+        @media screen and (min-width : 600px) { @content; }
+    }
+    @else if $screenWidth == largeScreen {
+        @media screen and (min-width: 992px) { @content; }
+    }
+    @else if $screenWidth == largeScreen1200 {
+        @media screen and (min-width: 1200px) { @content; }
+    }
+}
+// @include breakpoint(sizeScreen) {
+//     Styles ...
+// }
+
+// Fluid Typography
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+    $u1: unit($min-vw);
+    $u2: unit($max-vw);
+    $u3: unit($min-font-size);
+    $u4: unit($max-font-size);
+
+    @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+        & {
+            font-size: $min-font-size;
+            @media screen and (min-width: $min-vw) {
+                font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+            }
+            @media screen and (min-width: $max-vw) {
+                font-size: $max-font-size;
+            }
+        }
+    }
+}
+
+
+
+// Layout
+// --------------------
+// Padding Menu Desktop
+@mixin paddingMenu {
+    @include breakpoint(largeScreen) {
+        padding: 13.5px 30.1px;
+    }
+    @include breakpoint(largeScreen1200) {
+        padding: 13.5px 42.8px;
+    }
+}
+
+// Padding SubMenu Desktop
+$padSubMenu: 13.5px 40px;

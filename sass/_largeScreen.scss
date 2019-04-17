@@ -1,0 +1,48 @@
+/* -------------------------------------
+Large Screen Styles (from 992px upwards)
+------------------------------------- */
+@include breakpoint(largeScreen) {
+    /* Hide Mobile Navbar */
+    .mobileBanner, .mobileBannerHeight {
+        display: none;
+    }
+
+    .desktopBanner, .desktopMenu, .desktopSubMenu {
+        display: flex;
+    }
+    
+    .titreH4 {
+        font-size: 24px;
+    }
+    
+
+    /* Styles Particuliers Ecole(index.html)
+    -------------------------------------- */
+    .accroche {
+        font-size: 24px;
+    
+        span {
+            font-size: 80px;
+            line-height: 1.5;
+        }
+    }
+
+    
+    /* Footer */
+    .footer {
+    
+        .adresse, .renseignements, .designers {
+            font-size: 16px;
+            letter-spacing: 3px;
+        }
+    
+        .renseignements {
+            font-size: 18px;
+            margin-bottom: 0.3em;
+        }
+    
+        .designers {
+            font-size: 13px;
+        }
+    }
+}

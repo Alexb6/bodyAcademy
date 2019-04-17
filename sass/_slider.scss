@@ -1,0 +1,478 @@
+/* ---------------------------------------
+Slick Slider Styles
+---------------------------------------- */
+/* Slider Hero */
+.sliderHero  {
+    max-width: 1300px;
+    height: auto;
+    margin: 0 auto;
+
+    &.slick-dotted.slick-slider {
+        margin-bottom: 0;
+    }
+
+    img.fond {
+        width: 100%;
+        height: auto;
+        z-index: -9999;
+    }
+
+    div { 
+        text-align: center;
+        position: relative;
+
+        .slider-img {
+            margin: 0;
+        }
+        
+        
+        p {
+            position: absolute;
+            font-family: $fontTitre;
+            color: white;
+            opacity: 0;
+            white-space: nowrap;
+            font-weight: 600;
+            margin: 0;
+            // Fluid Typography
+            $min_width: 320px;
+            $max_width: 1200px;
+            $min_font: 14px;
+            $max_font: 38px;
+            @include fluid-type($min_width, $max_width, $min_font, $max_font);
+        }
+        
+    }
+
+    .first {
+
+        .slider-img1 {            
+            max-width: 50%;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            &.slider-animation-img1{
+                -webkit-animation-name: animation1;
+                animation-name: animation1;
+                -webkit-animation-duration: 6s;
+                animation-duration: 6s;
+            }
+
+            @-webkit-keyframes animation1 {
+                0% {opacity: 0;}
+                20% {opacity: 1;}
+                100% {opacity: 1;}
+            }
+        
+            @keyframes animation1 {
+                0% {opacity: 0;}
+                20% {opacity: 1;}
+                100% {opacity: 1;}
+            }
+        }
+    }
+
+    .second {            
+
+        .slider-txt1 {
+            margin-top: 7%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            &.slider-animation-txt1 {
+                -webkit-animation-name: animation2;
+                animation-name: animation2;
+                -webkit-animation-duration: 6s;
+                animation-duration: 6s
+            }
+
+            @-webkit-keyframes animation2 {
+                0% {opacity: 0; margin-top: 5%;}
+                20% {opacity: 1; margin-top: 7%;}
+                100% {opacity: 1; margin-top: 7%;}
+            }
+        
+            @keyframes animation2 {
+                0% {opacity: 0; margin-top: 5%;}
+                20% {opacity: 1; margin-top: 7%;}
+                100% {opacity: 1; margin-top: 7%;}
+            }        
+        }
+
+        .slider-txt2 {
+            margin-top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            &.slider-animation-txt2 {
+                -webkit-animation-name: animation3;
+                animation-name: animation3;
+                -webkit-animation-duration: 6s;
+                animation-duration: 6s;
+            }
+
+            @-webkit-keyframes animation3 {
+                0% {opacity: 0; margin-top: 18%;}
+                20% {opacity: 0; margin-top: 18%;}
+                40% {opacity: 1; margin-top: 15.5%;}
+                100% {opacity: 1; margin-top: 15.5%;}
+            }
+        
+            @keyframes animation3 {
+                0% {opacity: 0; margin-top: 18%;}
+                20% {opacity: 0; margin-top: 18%;}
+                40% {opacity: 1; margin-top: 15.5%;}
+                100% {opacity: 1; margin-top: 15.5%;}
+            }
+        }
+    }
+
+    .third {
+
+        .slider-img2 {
+            max-width: 20%;
+            opacity: 0;
+            position: absolute;
+            margin-top: 13%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+
+            &.slider-animation-img2{
+                -webkit-animation-name: animation4;
+                animation-name: animation4;
+                -webkit-animation-duration: 6s;
+                animation-duration: 6s;
+            }
+
+            @-webkit-keyframes animation4 {
+                0% {opacity: 0; left: 80%}
+                20% {opacity: 1; left: 20%}
+                100% {opacity: 1; left: 20%}
+            }
+        
+            @keyframes animation4 {
+                0% {opacity: 0; left: 80%}
+                20% {opacity: 1; left: 20%}
+                100% {opacity: 1; left: 20%}
+            }
+        }
+
+        .slider-txt3 {
+            margin-top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            &.slider-animation-txt3 {
+                -webkit-animation-name: animation5;
+                animation-name: animation5;
+                -webkit-animation-duration: 6s;
+                animation-duration: 6s;
+            }
+
+            @-webkit-keyframes animation5 {
+                0% {opacity: 0; margin-top: 5%;}
+                20% {opacity: 1; margin-top: 15%;}
+                100% {opacity: 1; margin-top: 15%;}
+            }
+        
+            @keyframes animation5 {
+                0% {opacity: 0; margin-top: 5%;}
+                20% {opacity: 1; margin-top: 15%;}
+                100% {opacity: 1; margin-top: 15%;}
+            }
+        }
+
+    }
+
+    .fourth {  
+        .slider-txt4 {
+            margin-top: 12%;
+            left: 45%;
+            transform: translate(20%, 20%);
+
+            &.slider-animation-txt4 {
+                -webkit-animation-name: animation6;
+                animation-name: animation6;
+                -webkit-animation-duration: 6s;
+                animation-duration: 6s;
+            }
+
+            @-webkit-keyframes animation6 {
+                0% {opacity: 0; margin-top: 5%;}
+                20% {opacity: 1; margin-top: 12%;}
+                100% {opacity: 1; margin-top: 12%;}
+            }
+        
+            @keyframes animation6 {
+                0% {opacity: 0; margin-top: 5%;}
+                20% {opacity: 1; margin-top: 12%;}
+                100% {opacity: 1; margin-top: 12%;}
+            }
+        }
+    }
+
+    .slick-dots {
+        bottom: 5px;
+        z-index: 9999;
+
+        li {
+
+            button::before {
+                color: white;
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+/* Slider Accroches */
+.sliderAccroches  {
+    max-width: 1140px;
+    height: auto;
+    margin: 2em auto;
+
+    img {
+        width: 100%;
+        height: auto;
+        z-index: -9999;
+    }
+
+    div {
+        position: relative;
+
+        img {
+            max-width: 1140px;
+            height: auto;
+        }
+
+        p {
+            position: absolute;            
+            color: white;
+            opacity: 0;
+            white-space: nowrap;
+            font-family: $fontTitre;
+            font-weight: 600;
+            margin-bottom: 0;
+            // Fluid Typography
+            $min_width: 320px;
+            $max_width: 1200px;
+            $min_font: 14px;
+            $max_font: 38px;
+            @include fluid-type($min_width, $max_width, $min_font, $max_font);
+        }
+    }    
+
+    .accroche01 {
+        p.accroche01_01 {
+            top: 20%;
+            left: 15%;
+
+            &.anim-accroche01_01 {
+                animation-name: anim_text_accroche01_01;
+                animation-duration: 4.55s;
+            }
+            @keyframes anim_text_accroche01_01 {
+                0% {
+                    opacity: 0;
+                    top: 20%;
+                    left: 100%;
+                }
+                50% {
+                    opacity: 1;
+                    top: 20%;
+                    left: 15%;
+                }
+                100% {
+                    opacity: 1;
+                    top: 20%;
+                    left: 15%;
+                }
+            }
+        }
+        p.accroche01_02 {
+            bottom: 20%;
+            right: 15%;
+
+            &.anim-accroche01_02 {
+                animation-name: anim_text_accroche01_02;
+                animation-duration: 4.55s;
+            }
+            @keyframes anim_text_accroche01_02 {
+                0% {
+                    opacity: 0;
+                    bottom: 20%;
+                    right: 50%;
+                }
+                50% {
+                    opacity: 1;
+                    bottom: 20%;
+                    right: 15%;
+                }
+                100% {
+                    opacity: 1;
+                    bottom: 20%;
+                    right: 15%;
+                }
+            }
+        }
+    }
+
+    .accroche02 {
+        p.accroche02_01 {
+            top: 25%;
+            left: 28%;
+
+            &.anim-accroche02_01 {
+                animation-name: anim_text_accroche02_01;
+                animation-duration: 4.55s;
+            }
+            @keyframes anim_text_accroche02_01 {
+                0% {
+                    opacity: 0;
+                    top: 100%;
+                    left: 0%;
+                }
+                50% {
+                    opacity: 1;
+                    top: 25%;
+                    left: 28%;
+                }
+                100% {
+                    opacity: 1;
+                    top: 25%;
+                    left: 28%;
+                }
+            }
+        }
+        p.accroche02_02 {
+            top: 45%;
+            right: 24.25%;
+
+            &.anim-accroche02_02 {
+                animation-name: anim_text_accroche02_02;
+                animation-duration: 4.55s;
+            }
+            @keyframes anim_text_accroche02_02 {
+                0% {
+                    opacity: 0;
+                    top: 0%;
+                    right: 50%;
+                }
+                50% {
+                    opacity: 1;
+                    top: 45%;
+                    right: 24.25%;
+                }
+                100% {
+                    opacity: 1;
+                    top: 45%;
+                    right: 24.25%;
+                }
+            }
+        }
+    }
+
+    .accroche03 {
+        p.accroche03_01 {
+            top: 15%;
+            left: 15%;
+
+            &.anim-accroche03_01 {
+                animation-name: anim_text_accroche03_01;
+                animation-duration: 4.55s;
+            }
+            @keyframes anim_text_accroche03_01 {
+                0% {
+                    opacity: 0;
+                    top: 100%;
+                    left: 15%;
+                }
+                40% {
+                    opacity: 1;
+                    top: 15%;
+                    left: 15%;
+                }
+                100% {
+                    opacity: 1;
+                    top: 15%;
+                    left: 15%;
+                }
+            }
+        }
+        p.accroche03_02 {
+            top: 55%;
+            right: 5%;
+
+            &.anim-accroche03_02 {
+                animation-name: anim_text_accroche03_02;
+                animation-duration: 4.55s;
+            }
+            @keyframes anim_text_accroche03_02 {
+                0% {
+                    opacity: 0;
+                    top: 0%;
+                    right: 5%;
+                }
+                55% {
+                    opacity: 1;
+                    top: 55%;
+                    right: 5%;
+                }
+                100% {
+                    opacity: 1;
+                    top: 55%;
+                    right: 5%;
+                }
+            }
+        }
+    }    
+
+    .slick-next, .slick-prev {
+        height: auto;
+        width: auto;
+        z-index: 9999;
+
+        &::before {
+            content: "";
+            display: block;
+            background-size: 30px 30px;
+            background-repeat: no-repeat;
+            height: 30px;
+            width: 30px;
+            display: none;
+        }
+    }
+
+    .slick-next {
+        right: 15px;
+
+        &::before {
+            background-image: url(../assets/icons/next-white.svg);
+        }
+    }
+    
+
+    .slick-prev {
+        left: 15px;
+
+        &::before {
+            background-image: url(../assets/icons/back-white.svg);
+        }
+    }
+
+    .slick-dots {
+        bottom: 5px;
+
+        li {
+
+            button::before {
+                color: white;
+                font-size: 40px;
+            }
+        }
+    }
+}
+

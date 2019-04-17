@@ -1,0 +1,25 @@
+/* ---------------------------
+Reset
+--------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+//  Partials Import
+// --------------------
+@import 'customFont';
+@import 'variables';
+@import './hamburgers/hamburgers';
+@import './slick/slick';
+@import './slick/slick-theme';
+@import './slider';
+@import './menus+Navigations';
+@import 'smallScreenDefault';
+@import 'middleScreen';
+@import 'largeScreen';
+
+/* -------------------------------
+Temporary Styles
+------------------------------- */

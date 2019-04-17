@@ -1,0 +1,45 @@
+/* -----------------------------------
+Small Screen Styles (from 599px downwards)
+------------------------------------ */
+/* Hide Desktop Navbar */
+.desktopBanner, .desktopMenu, .desktopSubMenu {
+    display: none;
+}
+
+/* Styles Généraux
+---------------------------- */
+.titreH4 {
+    font: 600 22px $fontTitre;
+    color: $softBlack;
+    margin-bottom: 0.8rem;
+}
+
+p {
+    font: 15px $fontTexte;
+}
+
+/* Styles Particuliers Ecole(index.html)
+-------------------------------------- */
+.accroche {
+    font: italic 600 22px $fontTitre;
+    color: $secondary;
+    text-align: center;
+    margin-bottom: 0.6em;
+    margin-top: 1em;
+
+    span {
+        font: 55px $fontScript;
+        line-height: 1.5;
+    }
+}
+
+
+/* Media Queries Small Screen
+---------------------------- */
+@include breakpoint(smallScreenSE) {
+    .mobileBanner .logo img {     
+        height: 28px;
+        width: 196px;        
+    }
+}
+

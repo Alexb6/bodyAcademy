@@ -1,0 +1,424 @@
+/* -------------------------------
+Small & Middle Screen Navigation
+------------------------------- */
+
+/* Left Menu Off Canvas Bar */
+#mobileNav {
+    position: fixed;
+}
+
+#mobileNav svg {
+    position: relative;
+    top: 2px;
+    color: $primary;
+}
+
+.mobileBanner {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    max-width: 1300px;
+    background-color: $anthracite;
+    opacity: 0.9;
+    color: white;
+    z-index: 10;
+
+    .logo img {     
+        height: 32px;
+        width: 224px;        
+    }
+}
+
+.mobileBannerHeight {
+    height: 50px;
+    background-color: $anthracite;
+}
+
+.bodyWrapper {
+    position: relative;
+    top: 0;
+    height: 100%;
+    -webkit-transition: ease 0.3s;
+    -moz-transition: ease 0.3s;
+    -o-transition: ease 0.3s;
+    transition: ease 0.3s;
+}
+
+.bodyWrapper.pushed {
+    -webkit-transform: translateX(250px);
+    -moz-transform: translateX(250px);
+    -ms-transform: translateX(250px);
+    -o-transform: translateX(250px);
+    transform: translateX(250px);
+}
+
+.panel, .subPanel {
+    font-family: $fontMenu;
+    width: 250px;
+    background: $anthracite;
+    position: absolute;
+    height:100%;
+    top: 0;
+    bottom: 0;
+    left: -250px;
+    -webkit-transition: ease 0.3s;
+    -moz-transition: ease 0.3s;
+    -o-transition: ease 0.3s;
+    transition: ease 0.3s;
+    overflow:hidden;
+}
+
+.panel {
+    z-index:10;
+    border-right:1px solid rgba($gray, 0.2);
+    
+    ul {
+        list-style: none;
+
+        li {            
+            width: 250px;
+            padding:10px;
+            border-bottom: 1px solid rgba($gray, 0.2);            
+            cursor: pointer;
+
+            a {
+                color:white;
+                text-decoration: none;
+                position: relative;
+
+                &::after {
+                    // extend clickable area
+                    content: '';
+                    position: absolute;
+                    top: -10px;
+                    bottom: -10px;
+                    left: -10px;
+                    right: -200px;
+                }
+            }
+
+            &:hover {
+                background: $primaryActive;
+                color: #fff;
+            }
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            ul li {
+                color:white;
+
+                a {
+                    position: relative;
+
+                    &::after {
+                        // extend clickable area
+                        content: '';
+                        position: absolute;
+                        top: -10px;
+                        bottom: -10px;
+                        left: -10px;
+                        right: -200px;
+                    }
+                }
+
+                &:hover {
+                    background: $primaryActive;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    
+}
+
+.panel.isOpen, .subPanel.isOpen {
+    -webkit-transform: translateX(-250px);
+    -moz-transform: translateX(-250px);
+    -ms-transform: translateX(-250px);
+    -o-transform: translateX(-250px);
+    transform: translateX(250px);
+}
+
+.closePanel {    
+    text-align: center;
+
+    img {
+        height: 34px;
+        width: 34px;
+    }
+}
+
+.subPanel{
+    z-index:20;
+}
+
+.subPanel .heading {
+    background: $primaryActive;
+    color: $anthracite;
+    font-weight:700;
+    font-style: italic;
+
+    &:hover {
+        color: white;
+    }
+}
+
+/* Share Icon of the Mobile Banner*/
+.shareIcon svg {
+    width: 34px;
+    height: 34px;
+    fill: $primary;
+}
+
+
+/* Right Menu Social Icons Bar */
+.panelR {
+    background: $anthracite;
+    position: absolute;
+    height: 100%;
+    width: 60px;
+    top: 0;
+    bottom: 0;
+    right: -60px;
+    -webkit-transition: ease 0.1s;
+    -moz-transition: ease 0.1s;
+    -o-transition: ease 0.1s;
+    transition: ease 0.1s;
+    overflow: hidden;
+    z-index: 10;
+	border-left: 1px solid rgba($gray, 0.2);
+
+    .shareIcons {
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        li {
+            margin-bottom: 10px;
+
+            div {
+                width: 34px;
+                height: 34px;
+                background-color: $primary;
+                position: relative;
+                top: 7px;
+                border-radius: 3px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 6px;
+                cursor: pointer;
+                -webkit-transition: ease 0.1s;
+                -moz-transition: ease 0.1s;
+                -o-transition: ease 0.1s;
+                transition: ease 0.1s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+                
+
+                svg {
+                    color: #fff;
+                    font-size: 30px;
+                }
+            }
+
+            img {
+                width: 34px;
+                height: 34px;
+                -webkit-transition: ease 0.1s;
+                -moz-transition: ease 0.1s;
+                -o-transition: ease 0.1s;
+                transition: ease 0.1s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+.panelR.pushedR {
+    -webkit-transform: translateX(-60px);
+    -moz-transform: translateX(-60px);
+    -ms-transform: translateX(-60px);
+    -o-transform: translateX(-60px);
+    transform: translateX(-60px);
+}
+
+.panelR.isOpenR {
+    -webkit-transform: translateX(-60px);
+    -moz-transform: translateX(-60px);
+    -ms-transform: translateX(-60px);
+    -o-transform: translateX(-60px);
+    transform: translateX(-60px);
+}
+
+.bodyWrapper.pushedR {
+    -webkit-transform: translateX(-60px);
+    -moz-transform: translateX(-60px);
+    -ms-transform: translateX(-60px);
+    -o-transform: translateX(-60px);
+    transform: translateX(-60px);
+}
+
+
+/* -------------------------------
+Large Screen Navigation
+------------------------------- */
+
+.desktopBanner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    max-width: 1300px;
+    background-color: $anthracite;
+    color: white;
+
+    .displayInline {
+        display: flex;
+        justify-content: space-between;
+
+        .logo img {     
+            height: 32px;
+            width: 224px;        
+        }
+    
+        .socialMediaIcons img {
+            width: 34px;
+            height: 34px;
+            margin-left: 7px;
+            -webkit-transition: ease 0.1s;
+            -moz-transition: ease 0.1s;
+            -o-transition: ease 0.1s;
+            transition: ease 0.1s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }    
+}
+
+.desktopMenu {
+    background-color: $primary;
+    height: 50px;
+    max-width: 1300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    .mainMenu {
+        display: flex;
+        justify-content: center;        
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: $fontMenu;
+            font-size: 18px;
+            @include paddingMenu;
+
+            &:hover {
+                background-color: $primaryActive;
+            }
+
+            &.activeMenu {
+                background-color: $primaryActive;
+            }
+        }
+    }
+}
+
+.desktopSubMenu {
+    height: 50px;
+    max-width: 1300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba($gray, 0.3);
+    position: sticky;
+    top: 50px;
+    z-index: 10;
+    background-color: $grayVeryLight;
+
+    .subMenu {
+        display: flex;
+        justify-content: center;
+        
+        a {
+            text-decoration: none;
+            color: $softBlack;
+            font-family: $fontMenu;
+            font-size: 18px;
+            padding: $padSubMenu;       
+
+            &.activeSubMenu {
+                color: $primaryActive;
+            }
+
+            &:hover {
+                background-color: rgba($gray, 0.2);
+            }
+        }        
+    }
+}
+
+
+.footer {    
+    max-width: 1300px;
+    background-color: $anthracite;
+    padding: 15px 0 5px 0;
+    background-image: url("../assets/logo/silhouette_12-20_blc15pourcent.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 1em;
+
+    .adresse, .renseignements, .designers {
+        color: #fff;
+        text-align: center;
+        font-family: $fontTitre;
+        font-size: 12px;
+        margin-bottom: 0.5em;
+    }
+
+    .underline {
+        background-color: rgba($gray, 0.3);
+        height: 1px;
+        margin-bottom: 0.5em;
+    }
+
+    .renseignements {
+        font-weight: 600;
+        font-size: 13px;
+    }
+
+    .designers {
+        color: $secondary;
+        font-style: italic;
+        font-size: 12px;
+
+        a {
+            text-decoration: none;
+            color: $secondary;
+            white-space: nowrap;
+
+            &:hover {
+                color: $secondaryLight;
+            }
+        }
+    }
+}
