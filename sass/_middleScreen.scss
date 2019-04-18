@@ -26,7 +26,6 @@ Middle Screen Styles (from 600px upwards)
         }
     }
     
-    
     /* Footer */
     .footer {
         
@@ -43,5 +42,49 @@ Middle Screen Styles (from 600px upwards)
             font-size: 13px;
         }
     }
-    
+
+    /* Styles Accueil Origine */
+    .silhouetteSwap .silhouetteAbsolute img {
+        width: 45vmin;
+    }
 }
+
+
+@include breakpoint(middleScreen768) {
+
+    /* Styles Accueil Origine */
+    .silhouetteAbsolute {
+        display: none;
+    }
+
+    .accrocheOrigine {
+        text-align: right;
+        position: relative;
+        right: 30px;
+    }
+
+    .silhouette {
+        display: block;
+        position: relative;
+        top: 20px;
+        right: 10px;
+        z-index: -1;
+    }
+
+    /* Slider Origine */
+    .sliderOrigineContainer {
+        padding: 30px 50px;
+
+        .sliderOrigine {
+            .slick-next {
+                right: -45px;
+            }
+            .slick-prev {
+                left: -45px;
+            }
+        }
+    }
+}
+
+
+    

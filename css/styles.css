@@ -406,7 +406,7 @@ Slick Slider Styles
   max-width: 50%;
   opacity: 0;
   position: absolute;
-  top: 50%;
+  top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -420,7 +420,7 @@ Slick Slider Styles
   0% {
     opacity: 0;
   }
-  20% {
+  40% {
     opacity: 1;
   }
   100% {
@@ -431,7 +431,7 @@ Slick Slider Styles
   0% {
     opacity: 0;
   }
-  20% {
+  40% {
     opacity: 1;
   }
   100% {
@@ -439,8 +439,8 @@ Slick Slider Styles
   }
 }
 .sliderHero .second .slider-txt1 {
-  margin-top: 7%;
-  left: 50%;
+  margin-top: 12%;
+  left: 42%;
   transform: translate(-50%, -50%);
 }
 .sliderHero .second .slider-txt1.slider-animation-txt1 {
@@ -452,34 +452,34 @@ Slick Slider Styles
 @-webkit-keyframes animation2 {
   0% {
     opacity: 0;
-    margin-top: 5%;
+    margin-top: 0%;
   }
   20% {
     opacity: 1;
-    margin-top: 7%;
+    margin-top: 12%;
   }
   100% {
     opacity: 1;
-    margin-top: 7%;
+    margin-top: 12%;
   }
 }
 @keyframes animation2 {
   0% {
     opacity: 0;
-    margin-top: 5%;
+    margin-top: 0%;
   }
   20% {
     opacity: 1;
-    margin-top: 7%;
+    margin-top: 12%;
   }
   100% {
     opacity: 1;
-    margin-top: 7%;
+    margin-top: 12%;
   }
 }
 .sliderHero .second .slider-txt2 {
-  margin-top: 15%;
-  left: 50%;
+  margin-top: 18%;
+  left: 62%;
   transform: translate(-50%, -50%);
 }
 .sliderHero .second .slider-txt2.slider-animation-txt2 {
@@ -491,37 +491,37 @@ Slick Slider Styles
 @-webkit-keyframes animation3 {
   0% {
     opacity: 0;
-    margin-top: 18%;
+    margin-top: 22%;
   }
   20% {
     opacity: 0;
-    margin-top: 18%;
+    margin-top: 20%;
   }
   40% {
     opacity: 1;
-    margin-top: 15.5%;
+    margin-top: 18%;
   }
   100% {
     opacity: 1;
-    margin-top: 15.5%;
+    margin-top: 18%;
   }
 }
 @keyframes animation3 {
   0% {
     opacity: 0;
-    margin-top: 18%;
+    margin-top: 22%;
   }
   20% {
     opacity: 0;
-    margin-top: 18%;
+    margin-top: 20%;
   }
   40% {
     opacity: 1;
-    margin-top: 15.5%;
+    margin-top: 18%;
   }
   100% {
     opacity: 1;
-    margin-top: 15.5%;
+    margin-top: 18%;
   }
 }
 .sliderHero .third .slider-img2 {
@@ -877,6 +877,45 @@ Slick Slider Styles
   font-size: 40px;
 }
 
+/* Slider Origine */
+.sliderOrigineContainer {
+  background-color: rgba(178, 178, 178, 0.7);
+  padding: 30px 40px;
+  width: auto;
+  max-height: 250px;
+  margin: 1.5em 0;
+}
+.sliderOrigineContainer .sliderOrigine img {
+  width: 100%;
+  height: auto;
+  padding: 0 15px;
+}
+.sliderOrigineContainer .sliderOrigine .slick-next, .sliderOrigineContainer .sliderOrigine .slick-prev {
+  height: auto;
+  width: auto;
+  z-index: 9999;
+}
+.sliderOrigineContainer .sliderOrigine .slick-next::before, .sliderOrigineContainer .sliderOrigine .slick-prev::before {
+  content: "";
+  display: block;
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+}
+.sliderOrigineContainer .sliderOrigine .slick-next {
+  right: -35px;
+}
+.sliderOrigineContainer .sliderOrigine .slick-next::before {
+  background-image: url(../assets/icons/next-white.svg);
+}
+.sliderOrigineContainer .sliderOrigine .slick-prev {
+  left: -35px;
+}
+.sliderOrigineContainer .sliderOrigine .slick-prev::before {
+  background-image: url(../assets/icons/back-white.svg);
+}
+
 /* -------------------------------
 Small & Middle Screen Navigation
 ------------------------------- */
@@ -1165,7 +1204,7 @@ Large Screen Navigation
   align-items: center;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 10000;
 }
 .desktopMenu .mainMenu {
   display: flex;
@@ -1203,7 +1242,7 @@ Large Screen Navigation
   border-bottom: 1px solid rgba(178, 178, 178, 0.3);
   position: sticky;
   top: 50px;
-  z-index: 10;
+  z-index: 10000;
   background-color: #F7F7F7;
 }
 .desktopSubMenu .subMenu {
@@ -1284,7 +1323,7 @@ p {
   font: 15px Raleway, sans-serif;
 }
 
-/* Styles Particuliers Ecole(index.html)
+/* Styles Accueil Ecole
 -------------------------------------- */
 .accroche {
   font: italic 600 22px Poppins, sans-serif;
@@ -1298,12 +1337,60 @@ p {
   line-height: 1.5;
 }
 
+/* Styles Accueil Origine
+-------------------------------------- */
+.headerOrigine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.silhouetteSwap {
+  position: relative;
+}
+.silhouetteSwap .silhouetteAbsolute img {
+  position: absolute;
+  z-index: -9999;
+  width: 50vmin;
+  margin: auto;
+  top: 30px;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+}
+
+.silhouette {
+  max-width: 250px;
+  height: auto;
+  margin: 1.5em auto;
+  display: none;
+  position: relative;
+}
+.silhouette img {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+  position: absolute;
+  top: -130px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 /* Media Queries Small Screen
 ---------------------------- */
 @media screen and (max-width: 360px) {
   .mobileBanner .logo img {
     height: 28px;
     width: 196px;
+  }
+
+  /* Slider Origine */
+  .sliderOrigineContainer {
+    padding: 30px 30px;
+  }
+  .sliderOrigineContainer .sliderOrigine .slick-next::before, .sliderOrigineContainer .sliderOrigine .slick-prev::before {
+    display: none;
   }
 }
 /* ---------------------------------------
@@ -1339,6 +1426,42 @@ Middle Screen Styles (from 600px upwards)
   .footer .designers {
     font-size: 13px;
   }
+
+  /* Styles Accueil Origine */
+  .silhouetteSwap .silhouetteAbsolute img {
+    width: 45vmin;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* Styles Accueil Origine */
+  .silhouetteAbsolute {
+    display: none;
+  }
+
+  .accrocheOrigine {
+    text-align: right;
+    position: relative;
+    right: 30px;
+  }
+
+  .silhouette {
+    display: block;
+    position: relative;
+    top: 20px;
+    right: 10px;
+    z-index: -1;
+  }
+
+  /* Slider Origine */
+  .sliderOrigineContainer {
+    padding: 30px 50px;
+  }
+  .sliderOrigineContainer .sliderOrigine .slick-next {
+    right: -45px;
+  }
+  .sliderOrigineContainer .sliderOrigine .slick-prev {
+    left: -45px;
+  }
 }
 /* -------------------------------------
 Large Screen Styles (from 992px upwards)
@@ -1357,7 +1480,7 @@ Large Screen Styles (from 992px upwards)
     font-size: 24px;
   }
 
-  /* Styles Particuliers Ecole(index.html)
+  /* Styles Accueil Ecole
   -------------------------------------- */
   .accroche {
     font-size: 24px;
@@ -1365,6 +1488,22 @@ Large Screen Styles (from 992px upwards)
   .accroche span {
     font-size: 80px;
     line-height: 1.5;
+  }
+
+  /* Styles Accueil Origine
+  -------------------------------------- */
+  .accrocheOrigine {
+    padding: 0 2em;
+  }
+
+  .titreOrigine {
+    padding: 0 2em;
+  }
+
+  .silhouette {
+    right: 50px;
+    max-width: 230px;
+    top: 0px;
   }
 
   /* Footer */
@@ -1378,6 +1517,19 @@ Large Screen Styles (from 992px upwards)
   }
   .footer .designers {
     font-size: 13px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* Styles Accueil Origine
+  -------------------------------------- */
+  .silhouette {
+    right: 50px;
+    max-width: 195px;
+    top: 30px;
+  }
+
+  .accrocheOrigine {
+    right: 15px;
   }
 }
 /* -------------------------------

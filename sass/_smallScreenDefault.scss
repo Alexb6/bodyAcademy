@@ -18,7 +18,7 @@ p {
     font: 15px $fontTexte;
 }
 
-/* Styles Particuliers Ecole(index.html)
+/* Styles Accueil Ecole
 -------------------------------------- */
 .accroche {
     font: italic 600 22px $fontTitre;
@@ -33,6 +33,52 @@ p {
     }
 }
 
+/* Styles Accueil Origine
+-------------------------------------- */
+.headerOrigine {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.silhouetteSwap {
+    position: relative;    
+
+    .silhouetteAbsolute img {
+        position: absolute;
+        z-index: -9999;
+        width: 50vmin;
+        margin: auto;
+        top: 30px;
+        // bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.5;
+    }
+}
+
+
+.silhouette {
+    max-width: 250px;
+    height: auto;
+    margin: 1.5em auto;
+    display: none;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: auto;
+        opacity: 0.5;
+        position: absolute;
+        top: -130px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+
+
+
 
 /* Media Queries Small Screen
 ---------------------------- */
@@ -40,6 +86,19 @@ p {
     .mobileBanner .logo img {     
         height: 28px;
         width: 196px;        
+    }
+
+    /* Slider Origine */
+    .sliderOrigineContainer {
+        padding: 30px 30px;
+
+        .sliderOrigine {
+            .slick-next, .slick-prev {
+                &::before {
+                    display: none;
+                }
+            }
+        }        
     }
 }
 
