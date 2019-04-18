@@ -33,6 +33,9 @@ $fontScript: Scriptina, sans-serif;
     @if $screenWidth == middleScreen {
         @media screen and (min-width : 600px) { @content; }
     }
+    @if $screenWidth == middleScreen768 {
+        @media screen and (min-width : 768px) { @content; }
+    }
     @else if $screenWidth == largeScreen {
         @media screen and (min-width: 992px) { @content; }
     }

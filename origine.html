@@ -1,26 +1,300 @@
-<header>
-    <div class="slider stick-dots">
-      <div class="slide">
-        <div class="slide__img">
-          <img src="" alt="" data-lazy="http://alexandrebuffet.fr/codepen/images/full/nature_01.jpg" class="full-image animated" data-animation-in="zoomInImage"/>
-        </div>
-        <div class="slide__content">
-          <div class="slide__content--headings">
-             <h2 class="animated" data-animation-in="fadeInUp">Slide me to the moon 01</h2>
-             <p class="animated" data-animation-in="fadeInUp" data-delay-in="0.3">With awesome animations 01</p>
-          </div>
-        </div>
-      </div>
-      <div class="slide">
-        <div class="slide__img">
-          <img src="" alt="" data-lazy="http://alexandrebuffet.fr/codepen/images/full/nature_02.jpg" class="full-image animated" data-animation-in="zoomInImage"/>
-        </div>
-        <div class="slide__content">
-          <div class="slide__content--headings">
-             <h2 class="animated" data-animation-in="fadeInRight">Slide me to the moon 02</h2>
-             <p class="animated" data-animation-in="fadeInRight" data-delay-in="0.2">With awesome animations 02</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Google Fonts -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Fahkwang:400,500,600,700|Poppins:400,400i,500,500i,600,600i,700,700i|Raleway:400,400i,500,500i,600,600i,700,700i"
+		rel="stylesheet">
+
+	<!-- FontAwesome -->
+	<link rel="stylesheet" href="./css/fontAwesome/all.min.css">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="./css/bootstrap/bootstrap.css">
+	<!-- My Styles -->
+	<link rel="stylesheet" href="./css/styles.css">
+
+	<title>Body Academy</title>
+</head>
+
+<body>
+
+	<!-- Mobile & Tablet Nav -->
+	<nav id="mobileNav" class="panel">
+		<ul>
+			<li>
+				<div class="openSubPanel"><a href="#">Accueil &nbsp;<i class="fas fa-caret fa-caret-right"></i></a>
+				</div>
+				<ul class="subPanel">
+					<li class="heading closeSubPanel"><i class="fas fa-caret-left"></i>&nbsp; Accueil</li>
+					<li><a href="index.html">École</a></li>
+					<li><a href="origine.html">Origine</a></li>
+				</ul>
+			</li>
+			<li>
+				<div class="openSubPanel"><a href="#">Élèves &nbsp;<i class="fas fa-caret-right"></i></a></div>
+				<ul class="subPanel">
+					<li class="heading closeSubPanel"><i class="fas fa-caret-left"></i>&nbsp; Élève</li>
+					<li><a href="formationEleves.html">Formations</a></li>
+					<li><a href="financements.html">Financements</a></li>
+					<li><a href="stages.html">Stages</a></li>
+				</ul>
+			</li>
+			<li>
+				<div class="openSubPanel"><a href="#">Professionnels &nbsp;<i class="fas fa-caret-right"></i></a></div>
+				<ul class="subPanel">
+					<li class="heading closeSubPanel"><i class="fas fa-caret-left"></i>&nbsp; Professionnels</li>
+					<li><a href="formationPro.html">Formations</a></li>
+					<li><a href="accompagnement.html">Accompagnement</a></li>
+					<li><a href="vae.html">V.A.E</a></li>
+				</ul>
+			</li>
+			<li><a href="modeles.html">Modèle</a></li>
+			<li>
+				<div class="openSubPanel"><a href="#">Label &nbsp;<i class="fas fa-caret-right"></i></a></div>
+				<ul class="subPanel">
+					<li class="heading closeSubPanel"><i class="fas fa-caret-left"></i>&nbsp; Label</li>
+					<li><a href="label.html">Le Label</a></li>
+					<li><a href="salon.html">Le Salon Body Academy Paris</a></li>
+				</ul>
+			</li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li class="closePanel"><img src="./assets/icons/close-button-$primary.svg" alt="close menu icon"></li>
+		</ul>
+	</nav>
+	<!-- Mobile & Tablet Social Icons Nav -->
+	<nav id="mobileIcons" class="panelR">
+		<ul class="shareIcons">
+			<li class="heading closePanelR">
+				<div><i class="fas fa-chevron-left"></i></div>
+			</li>
+			<li class="clickedIcon"> <a href="https://www.facebook.com/bodyacademyparis/" target="_blank"><img
+						src="./assets/icons/facebook-logo.svg" alt="facebook icon"></a></li>
+			<li class="clickedIcon"> <a href="https://twitter.com/body_academy?lang=fr" target="_blank"><img
+						src="./assets/icons/twitter-logo.svg" alt="twitter icon"></a></li>
+			<li class="clickedIcon"> <a href="https://www.instagram.com/bodyacademyparis/?hl=fr" target="_blank"><img
+						src="./assets/icons/instagram-logo.svg" alt="instagram icon"></a></li>
+			<li class="clickedIcon"> <a href="https://www.youtube.com/channel/UCpZUU1_jdk1lCAhlEyLTb0g"
+					target="_blank"><img src="./assets/icons/youtube icon.svg" alt="youtube icon"></a></li>
+			<li class="clickedIcon"> <a href="https://www.linkedin.com/in/body-academy-paris-655a99110"
+					target="_blank"><img src="./assets/icons/linkedin-logo.svg" alt="linkedin icon"></a></li>
+		</ul>
+	</nav>
+
+
+	<div class="bodyWrapper">
+		<!-- Page Contents Go Here -->
+		<header>
+			<div class="container mobileBanner">
+				<button class="hamburger hamburger--squeeze" type="button">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
+				<div class="logo"><a href="index.html"><img src="./assets/logo/logoBodyacAdemyBlc40-280-epais.svg"
+							alt="logo Body Academy"></a></div>
+				<div class="shareIcon"><a href="#">
+						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31.2 31.2"
+							style="enable-background:new 0 0 31.2 31.2;" xml:space="preserve">
+							<g>
+								<path d="M0,3.1v25c0,1.7,1.4,3.1,3.1,3.1h25c1.7,0,3.1-1.4,3.1-3.1v-25c0-1.7-1.4-3.1-3.1-3.1h-25C1.4,0,0,1.4,0,3.1z M12,15.6
+                                c0,0.2,0,0.5-0.1,0.6l8.9,5.4c0.6-0.5,1.4-0.7,2.2-0.7c2.1,0,3.9,1.8,3.9,3.9s-1.8,3.9-3.9,3.9S19,26.9,19,24.8
+                                c0-0.2,0-0.5,0.1-0.6l-8.9-5.4c-0.6,0.5-1.4,0.7-2.2,0.7c-2.1,0-3.9-1.8-3.9-3.9s1.8-3.9,3.9-3.9c0.8,0,1.7,0.2,2.2,0.7L19.2,7
+                                c0-0.2-0.1-0.4-0.1-0.6c0-2.1,1.8-3.9,3.9-3.9s3.9,1.8,3.9,3.9s-1.8,3.9-3.9,3.9c-0.8,0-1.7-0.2-2.2-0.7L11.8,15
+                                C12,15.2,12,15.4,12,15.6z" />
+							</g>
+						</svg>
+					</a></div>
+			</div>
+			<div class="mobileBannerHeight"></div>
+
+			<div class="container desktopBanner">
+				<div class="container">
+					<div class="row">
+						<div class="col displayInline">
+							<div class="logo"><a href="index.html"><img
+										src="./assets/logo/logoBodyacAdemyBlc40-280-epais.svg"
+										alt="logo Body Academy"></a></div>
+							<div class="socialMediaIcons">
+								<a href="https://www.facebook.com/bodyacademyparis/" target="_blank"><img
+										src="./assets/icons/facebook-logo.svg" alt="facebook icon"></a>
+								<a href="https://twitter.com/body_academy?lang=fr" target="_blank"><img
+										src="./assets/icons/twitter-logo.svg" alt="twitter icon"></a>
+								<a href="https://www.instagram.com/bodyacademyparis/?hl=fr" target="_blank"><img
+										src="./assets/icons/instagram-logo.svg" alt="instagram icon"></a>
+								<a href="https://www.youtube.com/channel/UCpZUU1_jdk1lCAhlEyLTb0g" target="_blank"><img
+										src="./assets/icons/youtube icon.svg" alt="youtube icon"></a>
+								<a href="https://www.linkedin.com/in/body-academy-paris-655a99110" target="_blank"><img
+										src="./assets/icons/linkedin-logo.svg" alt="linkedin icon"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Desktop Menu Nav -->
+		<nav class="container desktopMenu">
+			<div class="container">
+				<div class="mainMenu">
+					<a class="activeMenu" href="index.html">Accueil</a>
+					<a href="formationEleves.html">Élèves</a>
+					<a href="formationsPro.html">Professionnels</a>
+					<a href="modeles.html">Modèles</a>
+					<a href="label.html">Label</a>
+					<a href="blog.html">Blog</a>
+					<a href="contact.html">Contact</a>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Hero Slider -->
+		<div class="sliderHero">
+			<div class="first">
+				<img class="slider-img1 slider-img" src="assets/images/logo_orange_02.png">
+				<img class="fond1 fond" src="assets/images/ondesv2_1300_350.jpg">
+			</div>
+			<div class="second">
+				<p class="slider-txt1">La première école privée de coiffure</p>
+				<p class="slider-txt2">et esthétique Afro-européenne</p>
+				<img class="fond2 fond" src="assets/images/slick_fond_2.jpg">
+			</div>
+			<div class="third">
+				<p class="slider-txt3">un label de qualité</p>
+				<img class="slider-img2 slider-img" src="assets/images/label_orange.png">
+				<img class="fond3 fond" src="assets/images/slick_fond_3.jpg">
+			</div>
+			<div class="fourth">
+				<p class="slider-txt4">Une phrase à définir...</p>
+				<img class="fond4 fond" src="assets/images/slick_fond_4.jpg">
+			</div>
+		</div>
+
+		<!-- Desktop Sub Menu Nav -->
+		<nav class="container desktopSubMenu">
+			<div class="container">
+				<div class="subMenu">
+					<a href="index.html">École</a>
+					<a class="activeSubMenu" href="origine.html">Origine</a>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<div class="container">
+				<div class="row headerOrigine">
+					<div class="col-md-8 silhouetteSwap">
+						<div class="silhouetteAbsolute">
+							<img src="./assets/logo/silhouette_12-20_gris.svg" alt="image slhouette de femme">
+						</div>
+						<div class="accroche accrocheOrigine"><span>Qui est</span> Body Academy Paris ?</div>
+						<div class="titreH4 titreOrigine">On me demande souvent pourquoi Body Academy Paris ? Quel
+							rapport avec le cheveu ?</div>
+					</div>
+					<div class="col-md-4">
+						<div class="silhouette">
+							<img src="./assets/logo/silhouette_12-20_gris.svg" alt="image slhouette de femme">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<p>Body Academy Paris est né de mon exaspération. Jeune femme camerounaise très coquette, j’ai pris
+					l’habitude depuis
+					plusieurs années de me coiffer moi-même par insatisfaction du service proposé pour mes cheveux
+					crépus.
+					Par peur et par manque de confiance envers les coiffeurs. Cette personne saura t elle s’occuper de
+					mes cheveux ?
+					Est-elle compétente ? Saura t elle me conseiller correctement en tenant compte de mes cheveux?
+					A-t-elle était formé ?
+					Quel produit va-t-elle utiliser? Saura-t-elle être douce avec mon cuir chevelu…
+				</p>
+				<p>
+					J’ai constaté que mes collègues et amis européens bénéficiant d’une réelle expertise de leur cheveu
+					(et leur cuir
+					chevelu) changent de coiffure, font des couleurs différentes et ont un grand choix de salon.
+					En effet, pour avoir l’honneur d’être coiffeur de cheveux caucasiens la personne doit suivre une
+					formation de minimum 1
+					à 2 ans.
+					Aujourd’hui nous confions nos cheveux crépus, frisés à des personnes qui ont peu de formation ou qui
+					sont « sans diplôme
+					».
+					Confiriez-vous votre santé, vos yeux, vos oreilles à un médecin qui a fait 20 jours de formation ou
+					qui a suivi des
+					modules…avec de la chance?…
+					Attention, je ne dis pas qu’avec le diplôme la satisfaction client est garantie, toutefois y a des
+					erreurs, qui ne
+					pourront être commises.
+				</p>
+
+
+				<div class="sliderOrigineContainer">
+					<div class="sliderOrigine">
+						<div><img src="./assets/images/slick_origine_01.jpg" alt="image galerie 01"></div>
+						<div><img src="./assets/images/slick_origine_02.jpg" alt="image galerie 02"></div>
+						<div><img src="./assets/images/slick_origine_03.jpg" alt="image galerie 03"></div>
+						<div><img src="./assets/images/slick_origine_04.jpg" alt="image galerie 04"></div>
+						<div><img src="./assets/images/slick_origine_05.jpg" alt="image galerie 05"></div>
+						<div><img src="./assets/images/slick_origine_06.jpg" alt="image galerie 06"></div>
+						<div><img src="./assets/images/slick_origine_07.jpg" alt="image galerie 07"></div>
+						<div><img src="./assets/images/slick_origine_08.jpg" alt="image galerie 08"></div>
+						<div><img src="./assets/images/slick_origine_09.jpg" alt="image galerie 09"></div>
+
+					</div>
+				</div>
+
+
+				<p>Riche de ce regard critique et très exigeante ; un salon n’était pas suffisant. J’ai donc cherché une
+					autre solution,
+					plus complète, plus approfondie, plus définitive. La solution qui fera que peu importe l’origine, le
+					cheveu bénéficie de
+					la même qualité de traitement et de soin.
+				</p>
+				<p><b>Ma volonté</b> : que le cheveu crépu, frisé soit traité à la même hauteur, au même niveau
+					d’exigeante,
+					d’expertise, de
+					professionnalisme, de qualité de service que n’importe quel autre cheveu.
+				</p>
+				<p><b>La solution</b> :
+					l’éducation, une véritable formation complète.</p>
+				<p>Afin que je puisse confier mes cheveux,
+					mon cuir chevelu (ma beauté divine) à une personne experte du sujet et en toute
+					confiance.
+					Body Academy Paris = centre de formation qui apporte des réponses d’abord sur le cheveu puis sur le
+					reste du corps.</p>
+			</div>
+
+
+		</main>
+		<footer class="container footer">
+			<div class="coordonnees container">
+				<p class="adresse">Body Academy - 105 boulevard Chanzy - 93100 Montreuil | contact@bodyacademy.fr</p>
+				<p class="underline"></p>
+				<p class="renseignements">Renseignements : 09 50 60 95 08</p>
+				<p class="designers">Design by <a href="https://www.linkedin.com/in/alex-lap-tran-082a8b17b/"
+						target="_blank">Alex Tran, </a> <a href="https://www.linkedin.com/in/ronan-le-discot-982267120/"
+						target="_blank">Ronan Le Discot</a></p>
+			</div>
+		</footer>
+	</div>
+
+	<!-- FontAwesome -->
+	<script src="./js/FontAwesome/all.min.js"></script>
+	<!-- jQuery -->
+	<script src="./js/jquery.js"></script>
+	<!-- Slick Slider -->
+	<script src="./js/slick/slick.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="./js/bootstrap/bootstrap.js"></script>
+	<!-- My Script -->
+	<script src="./js/script.js"></script>
+</body>
+
+</html>

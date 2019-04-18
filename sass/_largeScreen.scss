@@ -16,7 +16,7 @@ Large Screen Styles (from 992px upwards)
     }
     
 
-    /* Styles Particuliers Ecole(index.html)
+    /* Styles Accueil Ecole
     -------------------------------------- */
     .accroche {
         font-size: 24px;
@@ -25,6 +25,22 @@ Large Screen Styles (from 992px upwards)
             font-size: 80px;
             line-height: 1.5;
         }
+    }
+
+    /* Styles Accueil Origine
+    -------------------------------------- */
+    .accrocheOrigine {
+        padding: 0 2em;
+    }
+
+    .titreOrigine {
+        padding: 0 2em;
+    }
+
+    .silhouette {
+        right: 50px;
+        max-width: 230px;
+        top: 0px;
     }
 
     
@@ -44,5 +60,19 @@ Large Screen Styles (from 992px upwards)
         .designers {
             font-size: 13px;
         }
+    }
+}
+
+@include breakpoint(largeScreen1200) {
+    /* Styles Accueil Origine
+    -------------------------------------- */
+    .silhouette {
+        right: 50px;
+        max-width: 195px;
+        top: 30px;
+    }
+    
+    .accrocheOrigine {
+        right: 15px;
     }
 }
