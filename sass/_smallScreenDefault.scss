@@ -60,7 +60,7 @@ p {
 
         p {
             font-family: $fontTexte;
-            font-size: 30px;
+            font-size: 20px;
             color: white;
             position: absolute;
             left: 50%;
@@ -99,7 +99,7 @@ p {
 
         p {
             font-family: $fontTexte;
-            font-size: 30px;
+            font-size: 20px;
             color: white;
             position: absolute;
             left: 50%;
@@ -138,7 +138,7 @@ p {
     
         p {
             font-family: $fontTexte;
-            font-size: 30px;
+            font-size: 20px;
             color: white;
             position: absolute;
             left: 50%;
@@ -177,7 +177,7 @@ p {
 
         p {
             font-family: $fontTexte;
-            font-size: 30px;
+            font-size: 20px;
             color: white;
             position: absolute;
             left: 50%;
@@ -216,7 +216,7 @@ p {
 
         p {
             font-family: $fontTexte;
-            font-size: 30px;
+            font-size: 20px;
             color: white;
             position: absolute;
             left: 50%;
@@ -228,6 +228,85 @@ p {
 
     .blocks-texts {
         margin-top: 20px;
+    }
+}
+
+/* Styles Eleves formations
+----------------------------- */
+
+.header1 {
+    background-image: url("../assets/imgtextures/raie_bleu.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+    margin: 0 auto;
+    margin-top: 60px;
+    text-align: center;
+    max-width: 1140px;
+    height: auto;
+    background-size: 100% auto;
+
+    // fluid font
+    h3 {
+        $min_width: 320px;
+        $max_width: 1200px;
+        $min_font: 10px;
+        $max_font: 38px;
+        @include fluid-type($min_width, $max_width, $min_font, $max_font);
+    }
+
+    p {
+        $min_width: 320px;
+        $max_width: 1200px;
+        $min_font: 6px;
+        $max_font: 20px;
+        @include fluid-type($min_width, $max_width, $min_font, $max_font);
+    }
+
+}
+
+.efcontents {
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    .salaries {
+        background-color: rgb(127, 208, 255);
+        border-style: solid;
+        border-width: 1px;
+        border-color: $softBlack;
+        border-radius: 5px;
+
+        h4 {margin: 5px;}
+        p {margin: 5px;}
+        img {
+            float: left;
+            width: 20%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+    }
+
+    .salariesimg {
+        background-color: rgb(127, 208, 255);
+        border-style: solid;
+        border-width: 1px;
+        border-color: $softBlack;
+        border-radius: 5px;
+        max-height: 160px;
+        width: auto;
+
+        h4 {margin: 5px;}
+        p {margin: 5px;}
+        img {
+            float: left;
+            width: 10%;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
     }
 }
 

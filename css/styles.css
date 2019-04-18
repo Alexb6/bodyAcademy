@@ -1337,7 +1337,6 @@ p {
   line-height: 1.5;
 }
 
-<<<<<<< HEAD
 /* Styles Eleves formations
 ----------------------------- */
 .block1 {
@@ -1362,7 +1361,7 @@ p {
 }
 .block1 .blocks-titles p {
   font-family: Raleway, sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   position: absolute;
   left: 50%;
@@ -1395,7 +1394,7 @@ p {
 }
 .block2 .blocks-titles p {
   font-family: Raleway, sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   position: absolute;
   left: 50%;
@@ -1428,7 +1427,7 @@ p {
 }
 .block3 .blocks-titles p {
   font-family: Raleway, sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   position: absolute;
   left: 50%;
@@ -1461,7 +1460,7 @@ p {
 }
 .block4 .blocks-titles p {
   font-family: Raleway, sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   position: absolute;
   left: 50%;
@@ -1494,7 +1493,7 @@ p {
 }
 .block5 .blocks-titles p {
   font-family: Raleway, sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   position: absolute;
   left: 50%;
@@ -1503,7 +1502,96 @@ p {
 }
 .block5 .blocks-texts {
   margin-top: 20px;
-=======
+}
+
+/* Styles Eleves formations
+----------------------------- */
+.header1 {
+  background-image: url("../assets/imgtextures/raie_bleu.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: white;
+  margin: 0 auto;
+  margin-top: 60px;
+  text-align: center;
+  max-width: 1140px;
+  height: auto;
+  background-size: 100% auto;
+}
+.header1 h3 {
+  font-size: 10px;
+}
+@media screen and (min-width: 320px) {
+  .header1 h3 {
+    font-size: calc(10px + 28 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header1 h3 {
+    font-size: 38px;
+  }
+}
+.header1 p {
+  font-size: 6px;
+}
+@media screen and (min-width: 320px) {
+  .header1 p {
+    font-size: calc(6px + 14 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header1 p {
+    font-size: 20px;
+  }
+}
+
+.efcontents {
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.efcontents .salaries {
+  background-color: #7fd0ff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #212529;
+  border-radius: 5px;
+}
+.efcontents .salaries h4 {
+  margin: 5px;
+}
+.efcontents .salaries p {
+  margin: 5px;
+}
+.efcontents .salaries img {
+  float: left;
+  width: 20%;
+  height: auto;
+  border-radius: 5px;
+}
+.efcontents .salariesimg {
+  background-color: #7fd0ff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #212529;
+  border-radius: 5px;
+  max-height: 160px;
+  width: auto;
+}
+.efcontents .salariesimg h4 {
+  margin: 5px;
+}
+.efcontents .salariesimg p {
+  margin: 5px;
+}
+.efcontents .salariesimg img {
+  float: left;
+  width: 10%;
+  border-radius: 5px;
+  margin: 5px;
+}
+
 /* Styles Accueil Origine
 -------------------------------------- */
 .headerOrigine {
@@ -1542,7 +1630,6 @@ p {
   left: 0;
   right: 0;
   margin: auto;
->>>>>>> f5a6cfeed7e00c77a72528c4199aa478512278cb
 }
 
 /* Media Queries Small Screen
