@@ -1298,6 +1298,173 @@ p {
   line-height: 1.5;
 }
 
+/* Styles Eleves formations
+----------------------------- */
+.block1 {
+  display: inline-block;
+  margin-top: 60px;
+  margin-left: 10.5%;
+  max-width: 400px;
+  max-height: 550px;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #212529;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+.block1 .blocks-titles {
+  height: 140px;
+  background-color: #006fba;
+  box-shadow: 0px 3px 3px 0px rgba(46, 46, 46, 0.5);
+  position: relative;
+}
+.block1 .blocks-titles p {
+  font-family: Raleway, sans-serif;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.block1 .blocks-texts {
+  margin-top: 20px;
+}
+
+.block2 {
+  display: inline-block;
+  margin-top: 60px;
+  margin-left: 10.5%;
+  max-width: 400px;
+  max-height: 550px;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #212529;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+.block2 .blocks-titles {
+  height: 140px;
+  background-color: #006fba;
+  box-shadow: 0px 3px 3px 0px rgba(46, 46, 46, 0.5);
+  position: relative;
+}
+.block2 .blocks-titles p {
+  font-family: Raleway, sans-serif;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.block2 .blocks-texts {
+  margin-top: 20px;
+}
+
+.block3 {
+  display: inline-block;
+  margin-top: 60px;
+  margin-left: 10.5%;
+  max-width: 400px;
+  max-height: 550px;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #212529;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+.block3 .blocks-titles {
+  height: 140px;
+  background-color: #006fba;
+  box-shadow: 0px 3px 3px 0px rgba(46, 46, 46, 0.5);
+  position: relative;
+}
+.block3 .blocks-titles p {
+  font-family: Raleway, sans-serif;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.block3 .blocks-texts {
+  margin-top: 20px;
+}
+
+.block4 {
+  display: inline-block;
+  margin-top: 60px;
+  margin-left: 10.5%;
+  max-width: 400px;
+  max-height: 550px;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #212529;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+.block4 .blocks-titles {
+  height: 140px;
+  background-color: #006fba;
+  box-shadow: 0px 3px 3px 0px rgba(46, 46, 46, 0.5);
+  position: relative;
+}
+.block4 .blocks-titles p {
+  font-family: Raleway, sans-serif;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.block4 .blocks-texts {
+  margin-top: 20px;
+}
+
+.block5 {
+  display: inline-block;
+  margin-top: 60px;
+  margin-left: 10.5%;
+  max-width: 400px;
+  max-height: 550px;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #212529;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+.block5 .blocks-titles {
+  height: 140px;
+  background-color: #006fba;
+  box-shadow: 0px 3px 3px 0px rgba(46, 46, 46, 0.5);
+  position: relative;
+}
+.block5 .blocks-titles p {
+  font-family: Raleway, sans-serif;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.block5 .blocks-texts {
+  margin-top: 20px;
+}
+
 /* Media Queries Small Screen
 ---------------------------- */
 @media screen and (max-width: 360px) {
