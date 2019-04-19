@@ -14,8 +14,15 @@ Small Screen Styles (from 599px downwards)
     margin-bottom: 0.8rem;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: $fontTitre;
+    font-weight: 600;
+    color: $softBlack;
+}
+
 p {
     font: 15px $fontTexte;
+    color: $softBlack;
 }
 
 /* Styles Accueil Ecole
@@ -30,283 +37,6 @@ p {
     span {
         font: 55px $fontScript;
         line-height: 1.5;
-    }
-}
-
-/* Styles Eleves formations
------------------------------ */
-.block1 {
-
-    display: inline-block;
-    // margin-right: 40px;
-    margin-top: 60px;
-    margin-left: 10.5%;
-    max-width: 400px;
-    max-height: 550px;
-    background-color: white;
-    border-style: solid;
-    border-width: 1px;
-    border-color: $softBlack;
-    border-radius: 5px;
-    text-align: center;
-    position: relative;
-
-    .blocks-titles {
-
-        height: 140px;
-        background-color: $primary;
-        box-shadow: 0px 3px 3px 0px rgba(46, 46, 46, 0.5);
-        position: relative;
-
-        p {
-            font-family: $fontTexte;
-            font-size: 20px;
-            color: white;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-    }
-
-    .blocks-texts {
-        margin-top: 20px;
-    }
-}
-
-.block2 {
-
-    display: inline-block;
-    margin-top: 60px;
-    margin-left: 10.5%;
-    max-width: 400px;
-    max-height: 550px;
-    background-color: white;
-    border-style: solid;
-    border-width: 1px;
-    border-color: $softBlack;
-    border-radius: 5px;
-    text-align: center;
-    position: relative;
-
-    .blocks-titles {
-
-        height: 140px;
-        background-color: $primary;
-        box-shadow: 0px 3px 3px 0px rgba(46, 46, 46, 0.5);
-        position: relative;
-
-        p {
-            font-family: $fontTexte;
-            font-size: 20px;
-            color: white;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-    }
-
-    .blocks-texts {
-        margin-top: 20px;
-    }
-}    
-
-.block3 {
-
-    display: inline-block;
-    margin-top: 60px;
-    margin-left: 10.5%;
-    max-width: 400px;
-    max-height: 550px;
-    background-color: white;
-    border-style: solid;
-    border-width: 1px;
-    border-color: $softBlack;
-    border-radius: 5px;
-    text-align: center;
-    position: relative;
-    
-    .blocks-titles {
-    
-        height: 140px;
-        background-color: $primary;
-        box-shadow: 0px 3px 3px 0px rgba(46, 46, 46, 0.5);
-        position: relative;
-    
-        p {
-            font-family: $fontTexte;
-            font-size: 20px;
-            color: white;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
-    
-    }
-    
-    .blocks-texts {
-        margin-top: 20px;
-    }
-}
-
-.block4 {
-
-    display: inline-block;
-    margin-top: 60px;
-    margin-left: 10.5%;
-    max-width: 400px;
-    max-height: 550px;
-    background-color: white;
-    border-style: solid;
-    border-width: 1px;
-    border-color: $softBlack;
-    border-radius: 5px;
-    text-align: center;
-    position: relative;
-
-    .blocks-titles {
-
-        height: 140px;
-        background-color: $primary;
-        box-shadow: 0px 3px 3px 0px rgba(46, 46, 46, 0.5);
-        position: relative;
-
-        p {
-            font-family: $fontTexte;
-            font-size: 20px;
-            color: white;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-    }
-
-    .blocks-texts {
-        margin-top: 20px;
-    }
-}
-
-.block5 {
-
-    display: inline-block;
-    margin-top: 60px;
-    margin-left: 10.5%;
-    max-width: 400px;
-    max-height: 550px;
-    background-color: white;
-    border-style: solid;
-    border-width: 1px;
-    border-color: $softBlack;
-    border-radius: 5px;
-    text-align: center;
-    position: relative;
-
-    .blocks-titles {
-
-        height: 140px;
-        background-color: $primary;
-        box-shadow: 0px 3px 3px 0px rgba(46, 46, 46, 0.5);
-        position: relative;
-
-        p {
-            font-family: $fontTexte;
-            font-size: 20px;
-            color: white;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-    }
-
-    .blocks-texts {
-        margin-top: 20px;
-    }
-}
-
-/* Styles Eleves formations
------------------------------ */
-
-.header1 {
-    background-image: url("../assets/imgtextures/raie_bleu.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    color: white;
-    margin: 0 auto;
-    margin-top: 60px;
-    text-align: center;
-    max-width: 1140px;
-    height: auto;
-    background-size: 100% auto;
-
-    // fluid font
-    h3 {
-        $min_width: 320px;
-        $max_width: 1200px;
-        $min_font: 10px;
-        $max_font: 38px;
-        @include fluid-type($min_width, $max_width, $min_font, $max_font);
-    }
-
-    p {
-        $min_width: 320px;
-        $max_width: 1200px;
-        $min_font: 6px;
-        $max_font: 20px;
-        @include fluid-type($min_width, $max_width, $min_font, $max_font);
-    }
-
-}
-
-.efcontents {
-    margin-top: 3%;
-    margin-left: 5%;
-    margin-right: 5%;
-
-    .salaries {
-        background-color: rgb(127, 208, 255);
-        border-style: solid;
-        border-width: 1px;
-        border-color: $softBlack;
-        border-radius: 5px;
-
-        h4 {margin: 5px;}
-        p {margin: 5px;}
-        img {
-            float: left;
-            width: 20%;
-            height: auto;
-            border-radius: 5px;
-        }
-
-    }
-
-    .salariesimg {
-        background-color: rgb(127, 208, 255);
-        border-style: solid;
-        border-width: 1px;
-        border-color: $softBlack;
-        border-radius: 5px;
-        max-height: 160px;
-        width: auto;
-
-        h4 {margin: 5px;}
-        p {margin: 5px;}
-        img {
-            float: left;
-            width: 10%;
-            border-radius: 5px;
-            margin: 5px;
-        }
-
     }
 }
 
@@ -354,6 +84,143 @@ p {
     }
 }
 
+
+/* Styles Eleves formations
+----------------------------- */
+.formationEleves {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &:first-child {        
+        margin-top: 60px;
+    }
+
+    .blockCenter {
+        text-align: center !important;
+
+        .blocks {
+            display: inline-block;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            max-width: 400px;
+            max-height: 550px;
+            background-color: white;
+            border: 1px solid $softBlack;
+            border-radius: 5px;
+            text-align: center;
+            position: relative;
+            
+            & a {
+                text-decoration: none;
+            }
+        }
+
+        .blocks-titles {
+
+            height: 140px;
+            background-color: $primary;
+            background-image: url("../assets/imgtextures/raie_bleu_horizontale.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 0px 3px 5px 2px rgba(46, 46, 46, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                font-family: $fontTexte;
+                font-size: 20px;
+                color: white;
+                margin-bottom: 0;
+            }
+        }
+
+        .blocks-texts {
+            margin-top: 20px;
+            padding: 1em;
+            color: $softBlack;
+        }
+    }
+    
+}
+
+/* Styles Eleves financements
+----------------------------- */
+.header1 {
+    background-image: url("../assets/imgtextures/raie_bleu.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 1em;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 24px;
+    text-align: center;
+    max-width: 1140px;
+    height: auto;
+    
+    h3 {
+        color: white;
+        // Fluid font
+        $min_width: 320px;
+        $max_width: 1200px;
+        $min_font: 24px;
+        $max_font: 38px;
+        @include fluid-type($min_width, $max_width, $min_font, $max_font);
+    }
+
+    p {
+        color: white;
+        // Fluid font
+        $min_width: 320px;
+        $max_width: 1200px;
+        $min_font: 16px;
+        $max_font: 20px;
+        @include fluid-type($min_width, $max_width, $min_font, $max_font);
+    }
+
+}
+
+.efcontents {
+
+    .salaries {
+        padding: 1em;
+        background-color: rgb(127, 208, 255);
+        border: 1px solid $primary;
+        border-radius: 5px;
+        margin-bottom: 1.5em;
+
+        img {
+            float: left;
+            width: 20%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        ul li {
+            margin-left: 30px;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+    }
+
+    .salariesimg {
+        height: auto;
+        max-width: 100px;
+
+        img {
+            float: left;
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-right: 16px;
+        }
+    }
+}
 
 /* Media Queries Small Screen
 ---------------------------- */
