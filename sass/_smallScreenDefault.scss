@@ -20,9 +20,41 @@ h1, h2, h3, h4, h5, h6 {
     color: $softBlack;
 }
 
-p {
+p, label, input, textarea {
     font: 15px $fontTexte;
     color: $softBlack;
+}
+
+main {
+    margin-bottom: 1em;
+}
+
+.marginTopMain {        
+    margin-top: 60px;
+}
+
+.highlightQuote {
+    display:block;
+    padding: 15px 20px 15px 45px;
+    position: relative;
+    border-left: 4px solid $secondary;
+    border-right: 2px solid $secondary;
+    box-shadow: 0px 2px 5px 2px #ccc;
+    border-radius: 15px 0 0 15px;
+
+    &::before {
+        content: "\201C";
+        position: absolute;
+        left: 5px;
+        top:-96px;
+        font-family: $fontScript;
+        font-size: 150px;
+        color: $secondary;
+    }
+
+    :last-child {
+        margin-bottom: 0.5em;
+    }
 }
 
 /* Styles Accueil Ecole
@@ -88,8 +120,6 @@ p {
 /* Styles Eleves formations
 ----------------------------- */
 .formationEleves {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 
     &:first-child {        
@@ -111,7 +141,7 @@ p {
             text-align: center;
             position: relative;
             
-            & a {
+            a {
                 text-decoration: none;
             }
         }
@@ -141,8 +171,7 @@ p {
             padding: 1em;
             color: $softBlack;
         }
-    }
-    
+    }    
 }
 
 /* Styles Eleves financements
@@ -222,6 +251,52 @@ p {
     }
 }
 
+
+/* Styles Contact
+----------------------------- */
+.contactScript {
+    text-align: center;
+    span {
+        letter-spacing: 12px;
+    }    
+}
+
+.ratp {
+    color: $primary;
+
+    img {
+        width: 20px;
+        height: auto;
+        position: relative;
+        top: -2px;
+    }
+}
+
+#map {
+    height: 280px;
+    width: auto;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    margin-bottom: 1.5em;
+}
+
+.text-danger {
+    display: none;
+}
+
+.btnEnvoyer {
+    display: block;
+    width: 100%;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    background-color: $primary;
+
+    &:hover {
+        background-color: $primaryActive;
+    }
+}
+
 /* Media Queries Small Screen
 ---------------------------- */
 @include breakpoint(smallScreenSE) {
@@ -241,6 +316,13 @@ p {
                 }
             }
         }        
+    }
+
+    /* Style Contact */
+    .contactScript {
+        span {
+            letter-spacing: 6px;
+        }    
     }
 }
 

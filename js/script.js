@@ -126,7 +126,7 @@ $(document).ready(function () {
 		arrows: true,
 		dots: false,
 		centerMode: true,
-		// centerPadding: '120px',
+		// centerPadding: '30px',
 		slidesToShow: 5,
 		responsive: [
 			{
