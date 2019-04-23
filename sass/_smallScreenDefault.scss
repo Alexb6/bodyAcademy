@@ -157,6 +157,7 @@ main {
             display: flex;
             justify-content: center;
             align-items: center;
+            &:hover { opacity: 0.5;}
 
             p {
                 font-family: $fontTexte;
@@ -250,6 +251,251 @@ main {
         }
     }
 }
+
+/*Styles Formations Pros
+--------------------*/
+
+.formationPros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &:first-child {        
+        margin-top: 60px;
+    }
+
+    .blockCenter {
+        text-align: center !important;
+
+        .blocks {
+            display: inline-block;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            max-width: 400px;
+            max-height: 550px;
+            background-color: white;
+            border: 1px solid $softBlack;
+            border-radius: 5px;
+            text-align: center;
+            position: relative;
+            
+            & a {
+                text-decoration: none;
+            }
+        }
+
+        .blocks-titles {
+
+            height: 140px;
+            background-color: $primary;
+            background-image: url("../assets/imgtextures/raie_orange.jpg");
+            background-position: 40%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 0px 3px 5px 2px rgba(46, 46, 46, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover { opacity: 0.5;}
+
+            p {
+                font-family: $fontTexte;
+                font-size: 20px;
+                color: white;
+                margin-bottom: 0;
+            }
+        }
+
+        .blocks-texts {
+            margin-top: 20px;
+            padding: 1em;
+            color: $softBlack;
+        }
+    }
+    
+}
+
+/*Styles accompagnement Pros
+--------------------*/
+.accompagnementPros {
+    text-align: center;
+    margin-bottom: 0;
+
+    // Fluid font
+    $min_width: 320px;
+    $max_width: 1200px;
+    $min_font: 24px;
+    $max_font: 38px;
+    @include fluid-type($min_width, $max_width, $min_font, $max_font);
+
+    .header1 {
+        background-image: url("../assets/imgtextures/raie_orange_h1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: white;
+        padding: 1em;
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-bottom: 24px;
+        text-align: center;
+        max-width: 1140px;
+        height: auto;
+        
+        h3 {
+            color: white;
+            // padding: 10px;
+        }
+    
+    }
+    .acctxt {
+        margin-bottom: 0px;
+        margin-left: 25px;
+        text-align: left;
+
+        h4 {
+            display: block;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+/*Styles vae Pros
+--------------------*/
+.vaePros {
+    text-align: center;
+    margin-bottom: 0;
+
+    // Fluid font
+    $min_width: 320px;
+    $max_width: 1200px;
+    $min_font: 24px;
+    $max_font: 38px;
+    @include fluid-type($min_width, $max_width, $min_font, $max_font);
+
+    .header1 {
+        background-image: url("../assets/imgtextures/raie_orange_h1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: white;
+        padding: 1em;
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-bottom: 24px;
+        text-align: center;
+        max-width: 1140px;
+        height: auto;
+        
+        h3 {
+            color: white;
+            // padding: 10px;
+        }
+    
+    }
+    .acctxt {
+        margin-bottom: 0px;
+        margin-left: 25px;
+        text-align: left;
+
+        h4 {
+            display: block;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+/*Styles modeles
+--------------------*/
+
+.modeles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &:first-child {        
+        margin-top: 60px;
+    }
+
+    .header1 {
+        background-image: url("../assets/imgtextures/motif_texture_cercle_orange_h1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: white;
+        padding: 1em;
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        text-align: center;
+        max-width: 1140px;
+        height: auto;
+        border-radius: 20px;
+        
+        h3 {
+            color: white;
+            // padding: 10px;
+        }
+    
+    }
+
+    .blockCenter {
+        text-align: center !important;
+
+        .blocks {
+            display: inline-block;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            max-width: 400px;
+            max-height: 550px;
+            background-color: white;
+            border: 1px solid $softBlack;
+            border-radius: 50px;
+            text-align: center;
+            position: relative;
+            
+            & a {
+                text-decoration: none;
+            }
+        }
+
+        .blocks-titles {
+
+            height: 220px;
+            width: 300px;
+            background-color: $primary;
+            background-image: url("../assets/imgtextures/motif_texture_cercle_orange.jpg");
+            background-position: 40%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 49px;
+            box-shadow: 0px 3px 5px 2px rgba(46, 46, 46, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover { opacity: 0.5;}
+
+            div {
+                display: block;
+                // padding: 50%;
+            }
+
+            p {
+                font-family: $fontTexte;
+                font-size: 20px;
+                color: white;
+                margin-bottom: 0;
+            }
+        }
+
+    }
+    
+}
+
+/*Styles label
+--------------------*/
+
+//Contenu à fournir
 
 
 /* Styles Contact

@@ -1467,6 +1467,9 @@ main {
   justify-content: center;
   align-items: center;
 }
+.formationEleves .blockCenter .blocks-titles:hover {
+  opacity: 0.5;
+}
 .formationEleves .blockCenter .blocks-titles p {
   font-family: Raleway, sans-serif;
   font-size: 20px;
@@ -1558,6 +1561,230 @@ main {
   margin-right: 16px;
 }
 
+<<<<<<< HEAD
+/*Styles Formations Pros
+--------------------*/
+.formationPros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.formationPros:first-child {
+  margin-top: 60px;
+}
+.formationPros .blockCenter {
+  text-align: center !important;
+}
+.formationPros .blockCenter .blocks {
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  max-width: 400px;
+  max-height: 550px;
+  background-color: white;
+  border: 1px solid #212529;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+.formationPros .blockCenter .blocks a {
+  text-decoration: none;
+}
+.formationPros .blockCenter .blocks-titles {
+  height: 140px;
+  background-color: #006fba;
+  background-image: url("../assets/imgtextures/raie_orange.jpg");
+  background-position: 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 3px 5px 2px rgba(46, 46, 46, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formationPros .blockCenter .blocks-titles:hover {
+  opacity: 0.5;
+}
+.formationPros .blockCenter .blocks-titles p {
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 0;
+}
+.formationPros .blockCenter .blocks-texts {
+  margin-top: 20px;
+  padding: 1em;
+  color: #212529;
+}
+
+/*Styles accompagnement Pros
+--------------------*/
+.accompagnementPros {
+  text-align: center;
+  margin-bottom: 0;
+}
+.accompagnementPros {
+  font-size: 24px;
+}
+@media screen and (min-width: 320px) {
+  .accompagnementPros {
+    font-size: calc(24px + 14 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .accompagnementPros {
+    font-size: 38px;
+  }
+}
+.accompagnementPros .header1 {
+  background-image: url("../assets/imgtextures/raie_orange_h1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding: 1em;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 24px;
+  text-align: center;
+  max-width: 1140px;
+  height: auto;
+}
+.accompagnementPros .header1 h3 {
+  color: white;
+}
+.accompagnementPros .acctxt {
+  margin-bottom: 0px;
+  margin-left: 25px;
+  text-align: left;
+}
+.accompagnementPros .acctxt h4 {
+  display: block;
+  margin-bottom: 20px;
+}
+
+/*Styles vae Pros
+--------------------*/
+.vaePros {
+  text-align: center;
+  margin-bottom: 0;
+}
+.vaePros {
+  font-size: 24px;
+}
+@media screen and (min-width: 320px) {
+  .vaePros {
+    font-size: calc(24px + 14 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .vaePros {
+    font-size: 38px;
+  }
+}
+.vaePros .header1 {
+  background-image: url("../assets/imgtextures/raie_orange_h1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding: 1em;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 24px;
+  text-align: center;
+  max-width: 1140px;
+  height: auto;
+}
+.vaePros .header1 h3 {
+  color: white;
+}
+.vaePros .acctxt {
+  margin-bottom: 0px;
+  margin-left: 25px;
+  text-align: left;
+}
+.vaePros .acctxt h4 {
+  display: block;
+  margin-bottom: 20px;
+}
+
+/*Styles modeles
+--------------------*/
+.modeles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.modeles:first-child {
+  margin-top: 60px;
+}
+.modeles .header1 {
+  background-image: url("../assets/imgtextures/motif_texture_cercle_orange_h1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding: 1em;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+  max-width: 1140px;
+  height: auto;
+  border-radius: 20px;
+}
+.modeles .header1 h3 {
+  color: white;
+}
+.modeles .blockCenter {
+  text-align: center !important;
+}
+.modeles .blockCenter .blocks {
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  max-width: 400px;
+  max-height: 550px;
+  background-color: white;
+  border: 1px solid #212529;
+  border-radius: 50px;
+  text-align: center;
+  position: relative;
+}
+.modeles .blockCenter .blocks a {
+  text-decoration: none;
+}
+.modeles .blockCenter .blocks-titles {
+  height: 220px;
+  width: 300px;
+  background-color: #006fba;
+  background-image: url("../assets/imgtextures/motif_texture_cercle_orange.jpg");
+  background-position: 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 49px;
+  box-shadow: 0px 3px 5px 2px rgba(46, 46, 46, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modeles .blockCenter .blocks-titles:hover {
+  opacity: 0.5;
+}
+.modeles .blockCenter .blocks-titles div {
+  display: block;
+}
+.modeles .blockCenter .blocks-titles p {
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 0;
+}
+
+/*Styles label
+--------------------*/
+=======
 /* Styles Contact
 ----------------------------- */
 .contactScript {
@@ -1601,6 +1828,7 @@ main {
   background-color: #0098fe;
 }
 
+>>>>>>> 038d56a906b2d6d3b0dc34cde26af7508090e1b1
 /* Media Queries Small Screen
 ---------------------------- */
 @media screen and (max-width: 360px) {
