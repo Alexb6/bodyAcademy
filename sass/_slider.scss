@@ -402,11 +402,11 @@ Slick Slider Styles
                 }
             }
         }
-        p.accroche03_02 {
+        p.accroche03_02 { 
             top: 55%;
             right: 5%;
 
-            &.anim-accroche03_02 {
+            &.anim-accroche03_02 { 
                 animation-name: anim_text_accroche03_02;
                 animation-duration: 4.55s;
             }
@@ -486,12 +486,15 @@ Slick Slider Styles
 
     .sliderOrigine {
 
-        img {
-            width: 100%;
-            height: auto;
+        .slick-slide {
             padding: 0 15px;
-            border-radius: 25%;
-        }
+
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+        }        
 
         .slick-next, .slick-prev {
             height: auto;
