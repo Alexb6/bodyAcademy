@@ -1709,12 +1709,23 @@ main {
 /*Styles modeles
 --------------------*/
 .modeles {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 .modeles:first-child {
   margin-top: 60px;
+}
+.modeles {
+  font-size: 24px;
+}
+@media screen and (min-width: 320px) {
+  .modeles {
+    font-size: calc(24px + 14 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modeles {
+    font-size: 38px;
+  }
 }
 .modeles .header1 {
   background-image: url("../assets/imgtextures/motif_texture_cercle_orange_h1.jpg");
@@ -1729,7 +1740,6 @@ main {
   text-align: center;
   max-width: 1140px;
   height: auto;
-  border-radius: 20px;
 }
 .modeles .header1 h3 {
   color: white;
@@ -1754,7 +1764,7 @@ main {
 }
 .modeles .blockCenter .blocks-titles {
   height: 220px;
-  width: 300px;
+  width: 320px;
   background-color: #006fba;
   background-image: url("../assets/imgtextures/motif_texture_cercle_orange.jpg");
   background-position: 40%;
@@ -1838,6 +1848,11 @@ main {
   }
   .sliderOrigineContainer .sliderOrigine .slick-next::before, .sliderOrigineContainer .sliderOrigine .slick-prev::before {
     display: none;
+  }
+
+  /* Style Contact */
+  .modeles .blocks-titles {
+    max-width: 288px;
   }
 
   /* Style Contact */
