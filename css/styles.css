@@ -1561,12 +1561,9 @@ main {
   margin-right: 16px;
 }
 
-<<<<<<< HEAD
 /*Styles Formations Pros
 --------------------*/
 .formationPros {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 .formationPros:first-child {
@@ -1784,7 +1781,6 @@ main {
 
 /*Styles label
 --------------------*/
-=======
 /* Styles Contact
 ----------------------------- */
 .contactScript {
@@ -1828,7 +1824,6 @@ main {
   background-color: #0098fe;
 }
 
->>>>>>> 038d56a906b2d6d3b0dc34cde26af7508090e1b1
 /* Media Queries Small Screen
 ---------------------------- */
 @media screen and (max-width: 360px) {
