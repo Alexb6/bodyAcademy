@@ -1754,13 +1754,41 @@ main {
   max-width: 400px;
   max-height: 550px;
   background-color: white;
-  border: 1px solid #212529;
-  border-radius: 50px;
+  border-radius: 10px 10px 50px 50px;
   text-align: center;
   position: relative;
+  color: #212529;
 }
 .modeles .blockCenter .blocks a {
   text-decoration: none;
+}
+.modeles .blockCenter .blocks h3 {
+  text-align: left;
+  text-shadow: 2px 2px 4px rgba(34, 34, 34, 0.5);
+}
+.modeles .blockCenter .blocks h3 span {
+  font-size: 80px;
+  font-family: Scriptina, sans-serif;
+  color: #e3881b;
+}
+.modeles .blockCenter .blocks h3 span {
+  font-size: 64px;
+}
+@media screen and (min-width: 320px) {
+  .modeles .blockCenter .blocks h3 span {
+    font-size: calc(64px + 16 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modeles .blockCenter .blocks h3 span {
+    font-size: 80px;
+  }
+}
+.modeles .blockCenter .blocks h3 .euros {
+  font-size: 40px;
+  text-shadow: 1px 1px #e3881b;
+  position: relative;
+  top: 5px;
 }
 .modeles .blockCenter .blocks-titles {
   height: 220px;
@@ -1770,7 +1798,8 @@ main {
   background-position: 40%;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 49px;
+  border: 1px solid #212529;
+  border-radius: 9px 9px 50px 50px;
   box-shadow: 0px 3px 5px 2px rgba(46, 46, 46, 0.3);
   display: flex;
   justify-content: center;
