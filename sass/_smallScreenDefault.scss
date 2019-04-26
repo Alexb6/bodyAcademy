@@ -256,8 +256,6 @@ main {
 --------------------*/
 
 .formationPros {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 
     &:first-child {        
@@ -409,13 +407,18 @@ main {
 --------------------*/
 
 .modeles {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 
     &:first-child {        
         margin-top: 60px;
     }
+
+    // Fluid font
+    $min_width: 320px;
+    $max_width: 1200px;
+    $min_font: 24px;
+    $max_font: 38px;
+    @include fluid-type($min_width, $max_width, $min_font, $max_font);
 
     .header1 {
         background-image: url("../assets/imgtextures/motif_texture_cercle_orange_h1.jpg");
@@ -430,7 +433,7 @@ main {
         text-align: center;
         max-width: 1140px;
         height: auto;
-        border-radius: 20px;
+        // border-radius: 20px;
         
         h3 {
             color: white;
@@ -489,7 +492,7 @@ main {
         .blocks-titles {
 
             height: 220px;
-            width: 300px;
+            width: 320px;
             background-color: $primary;
             background-image: url("../assets/imgtextures/motif_texture_cercle_orange.jpg");
             background-position: 40%;
@@ -501,6 +504,7 @@ main {
             display: flex;
             justify-content: center;
             align-items: center;
+
             &:hover { opacity: 0.5;}
 
             div {
@@ -590,6 +594,13 @@ main {
                 }
             }
         }        
+    }
+
+    /* Style Contact */
+    .modeles {
+        .blocks-titles {
+            max-width: 288px;
+        }
     }
 
     /* Style Contact */
