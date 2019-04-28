@@ -160,3 +160,86 @@ $(document).ready(function () {
 		]
 	});
 });
+
+// Contact Form
+
+$(document).ready(function () {
+	$("#contactForm").submit(function (event) {
+		// Prevent the form submission
+		event.preventDefault();
+		submitForm();
+	});
+
+	function submitForm() {
+		// Initiate Variables With Form Content
+		var name = $("#name").val();
+		var email = $("#email").val();
+		var message = $("#message").val();
+
+		$.ajax({
+			type: "POST",
+			url: "../php/formValidating.php",
+			data: "name=" + name + "&email=" + email + "&message=" + message,
+			success: function (text) {
+				if (text == "success") {
+					formSuccess();
+				}
+			}
+		});
+	}
+	function formSuccess() {
+		window.location.assign("../contactThankYou.html");
+	}
+});
+
+
+// $(function () {
+// 	// Get the form
+// 	var formulaire = $('#contactForm');
+
+// 	// Get the message div
+// 	var formMessages = $('#form-messages');
+
+// 	// Set up an event listener for the contact form.
+// 	$(formulaire).submit(function (event) {
+
+// 		// Stop the browser from submitting the form.
+// 		event.preventDefault();
+
+// 		// Serialize the form data.
+// 		var formData = $(formulaire).serialize();
+
+// 		// Submit the form using AJAX.
+// 		$.ajax({
+// 			type: 'POST',
+// 			url: $(formulaire).attr('action'),
+// 			data: formData
+// 		})
+// 			.done(function (response) {
+// 				// Make sure that the formMessages div has the 'success' class.
+// 				$(formMessages).removeClass('error');
+// 				$(formMessages).addClass('success');
+
+// 				// Set the message text.
+// 				$(formMessages).text(response);
+
+// 				// Clear the form.
+// 				$('#name').val('');
+// 				$('#email').val('');
+// 				$('#message').val('');
+// 			})
+// 			.fail(function (data) {
+// 				// Make sure that the formMessages div has the 'error' class.
+// 				$(formMessages).removeClass('success');
+// 				$(formMessages).addClass('error');
+
+// 				// Set the message text.
+// 				if (data.responseText !== '') {
+// 					$(formMessages).text(data.responseText);
+// 				} else {
+// 					$(formMessages).text('Une erreur s\'est produite, votre message n\'a pas été envoyé !');
+// 				}
+// 			});
+
+// 	});
+// });

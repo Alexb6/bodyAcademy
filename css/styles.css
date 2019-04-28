@@ -1763,8 +1763,9 @@ main {
   text-decoration: none;
 }
 .modeles .blockCenter .blocks h3 {
-  text-align: left;
+  text-align: center;
   text-shadow: 2px 2px 4px rgba(34, 34, 34, 0.5);
+  font-size: 1.6rem;
 }
 .modeles .blockCenter .blocks h3 span {
   font-size: 80px;
@@ -1806,7 +1807,7 @@ main {
   align-items: center;
 }
 .modeles .blockCenter .blocks-titles:hover {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 .modeles .blockCenter .blocks-titles div {
   display: block;
@@ -1840,15 +1841,17 @@ main {
 }
 
 #map {
-  height: 280px;
+  height: 300px;
   width: auto;
   background-color: #e9ecef;
   border-radius: 5px;
   margin-bottom: 1.5em;
 }
 
-.text-danger {
-  display: none;
+.g-recaptcha {
+  width: 100%;
+  transform: scale(0.8);
+  transform-origin: 0 0;
 }
 
 .btnEnvoyer {
@@ -1861,6 +1864,30 @@ main {
 }
 .btnEnvoyer:hover {
   background-color: #0098fe;
+}
+
+.success {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.error {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #b94a48;
+  background-color: #f2dede;
+  border: 1px solid rgba(185, 74, 72, 0.3);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 
 /* Media Queries Small Screen

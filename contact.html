@@ -18,6 +18,9 @@
     <!-- My Styles -->
     <link rel="stylesheet" href="./css/styles.css">
 
+    <!-- Google reCAPTCHA v2 -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <title>Body Academy</title>
 </head>
 
@@ -223,25 +226,26 @@
                     </div>
                     <div class="col-md-6">
                         <h4 class="">Envoyez-nous un message</h4>
-                        <form action="./php/formHandler.php" method="POST">
+                        <form id="contactForm" method="POST">
                             <div class="form-group">
                                 <label for="name"><b>Nom</b></label>
                                 <input type="text" id="name" name="name" class="form-control"
-                                    placeholder="prénom et nom">
-                                <p class="text-danger">Vous devez entrer un prénom et nom</p>
+                                    placeholder="nom et prénom">
+                                <p class="text-danger name-danger d-none">Entrez un nom et prénom</p>
                             </div>
                             <div class="form-group">
                                 <label for="email"><b>Courriel</b></label>
                                 <input type="email" id="email" name="email" class="form-control"
-                                    placeholder="nom@courriel.com">
-                                <p class="text-danger">Vous devez entrer un courriel</p>
+                                    placeholder="votre courriel">
+                                <p class="text-danger email-danger d-none">Entrez un courriel</p>
                             </div>
                             <div class="form-group">
                                 <label for="message"><b>Message</b></label>
                                 <textarea type="text" id="message" name="message" class="form-control" rows="6"
                                     placeholder="votre message..."></textarea>
-                                <p class="text-danger">Vous devez écrire un message</p>
+                                <p class="text-danger message-danger d-none">Écrivez un message</p>
                             </div>
+                            <div class="g-recaptcha" data-sitekey="6LdbkqAUAAAAAOG5RavGm0pnJHlztNTINIA8krx2"></div>
                             <div class="form-group">
                                 <input type="submit" class="btn btnEnvoyer" id="submit" name="submit" value="Envoyer">
                             </div>
