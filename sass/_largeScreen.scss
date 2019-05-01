@@ -8,6 +8,8 @@ Large Screen Styles (from 992px upwards)
     }
 
     .desktopBanner, .desktopMenu, .desktopSubMenu {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     

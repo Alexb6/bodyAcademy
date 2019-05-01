@@ -52,7 +52,8 @@ Slick Slider Styles
             position: absolute;
             top: 53%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
 
             &.slider-animation-img1{
                 -webkit-animation-name: animation1;
@@ -80,7 +81,8 @@ Slick Slider Styles
         .slider-txt1 {
             margin-top: 12%;
             left: 42%;
-            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
 
             &.slider-animation-txt1 {
                 -webkit-animation-name: animation2;
@@ -105,7 +107,8 @@ Slick Slider Styles
         .slider-txt2 {
             margin-top: 18%;
             left: 62%;
-            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
 
             &.slider-animation-txt2 {
                 -webkit-animation-name: animation3;
@@ -138,7 +141,8 @@ Slick Slider Styles
             position: absolute;
             margin-top: 13%;
             left: 30%;
-            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
 
             &.slider-animation-img2{
                 -webkit-animation-name: animation4;
@@ -163,7 +167,8 @@ Slick Slider Styles
         .slider-txt3 {
             margin-top: 15%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
 
             &.slider-animation-txt3 {
                 -webkit-animation-name: animation5;
@@ -191,7 +196,8 @@ Slick Slider Styles
         .slider-txt4 {
             margin-top: 12%;
             left: 45%;
-            transform: translate(20%, 20%);
+            -webkit-transform: translate(20%, 20%);
+                    transform: translate(20%, 20%);
 
             &.slider-animation-txt4 {
                 -webkit-animation-name: animation6;
@@ -271,8 +277,27 @@ Slick Slider Styles
             left: 15%;
 
             &.anim-accroche01_01 {
-                animation-name: anim_text_accroche01_01;
-                animation-duration: 4.55s;
+                -webkit-animation-name: anim_text_accroche01_01;
+                        animation-name: anim_text_accroche01_01;
+                -webkit-animation-duration: 4.55s;
+                        animation-duration: 4.55s;
+            }
+            @-webkit-keyframes anim_text_accroche01_01 {
+                0% {
+                    opacity: 0;
+                    top: 20%;
+                    left: 100%;
+                }
+                50% {
+                    opacity: 1;
+                    top: 20%;
+                    left: 15%;
+                }
+                100% {
+                    opacity: 1;
+                    top: 20%;
+                    left: 15%;
+                }
             }
             @keyframes anim_text_accroche01_01 {
                 0% {
@@ -297,8 +322,27 @@ Slick Slider Styles
             right: 15%;
 
             &.anim-accroche01_02 {
-                animation-name: anim_text_accroche01_02;
-                animation-duration: 4.55s;
+                -webkit-animation-name: anim_text_accroche01_02;
+                        animation-name: anim_text_accroche01_02;
+                -webkit-animation-duration: 4.55s;
+                        animation-duration: 4.55s;
+            }
+            @-webkit-keyframes anim_text_accroche01_02 {
+                0% {
+                    opacity: 0;
+                    bottom: 20%;
+                    right: 50%;
+                }
+                50% {
+                    opacity: 1;
+                    bottom: 20%;
+                    right: 15%;
+                }
+                100% {
+                    opacity: 1;
+                    bottom: 20%;
+                    right: 15%;
+                }
             }
             @keyframes anim_text_accroche01_02 {
                 0% {
@@ -326,8 +370,27 @@ Slick Slider Styles
             left: 28%;
 
             &.anim-accroche02_01 {
-                animation-name: anim_text_accroche02_01;
-                animation-duration: 4.55s;
+                -webkit-animation-name: anim_text_accroche02_01;
+                        animation-name: anim_text_accroche02_01;
+                -webkit-animation-duration: 4.55s;
+                        animation-duration: 4.55s;
+            }
+            @-webkit-keyframes anim_text_accroche02_01 {
+                0% {
+                    opacity: 0;
+                    top: 100%;
+                    left: 0%;
+                }
+                50% {
+                    opacity: 1;
+                    top: 25%;
+                    left: 28%;
+                }
+                100% {
+                    opacity: 1;
+                    top: 25%;
+                    left: 28%;
+                }
             }
             @keyframes anim_text_accroche02_01 {
                 0% {
@@ -352,8 +415,27 @@ Slick Slider Styles
             right: 24.25%;
 
             &.anim-accroche02_02 {
-                animation-name: anim_text_accroche02_02;
-                animation-duration: 4.55s;
+                -webkit-animation-name: anim_text_accroche02_02;
+                        animation-name: anim_text_accroche02_02;
+                -webkit-animation-duration: 4.55s;
+                        animation-duration: 4.55s;
+            }
+            @-webkit-keyframes anim_text_accroche02_02 {
+                0% {
+                    opacity: 0;
+                    top: 0%;
+                    right: 50%;
+                }
+                50% {
+                    opacity: 1;
+                    top: 45%;
+                    right: 24.25%;
+                }
+                100% {
+                    opacity: 1;
+                    top: 45%;
+                    right: 24.25%;
+                }
             }
             @keyframes anim_text_accroche02_02 {
                 0% {
@@ -381,8 +463,27 @@ Slick Slider Styles
             left: 15%;
 
             &.anim-accroche03_01 {
-                animation-name: anim_text_accroche03_01;
-                animation-duration: 4.55s;
+                -webkit-animation-name: anim_text_accroche03_01;
+                        animation-name: anim_text_accroche03_01;
+                -webkit-animation-duration: 4.55s;
+                        animation-duration: 4.55s;
+            }
+            @-webkit-keyframes anim_text_accroche03_01 {
+                0% {
+                    opacity: 0;
+                    top: 100%;
+                    left: 15%;
+                }
+                40% {
+                    opacity: 1;
+                    top: 15%;
+                    left: 15%;
+                }
+                100% {
+                    opacity: 1;
+                    top: 15%;
+                    left: 15%;
+                }
             }
             @keyframes anim_text_accroche03_01 {
                 0% {
@@ -407,8 +508,27 @@ Slick Slider Styles
             right: 5%;
 
             &.anim-accroche03_02 { 
-                animation-name: anim_text_accroche03_02;
-                animation-duration: 4.55s;
+                -webkit-animation-name: anim_text_accroche03_02; 
+                        animation-name: anim_text_accroche03_02;
+                -webkit-animation-duration: 4.55s;
+                        animation-duration: 4.55s;
+            }
+            @-webkit-keyframes anim_text_accroche03_02 {
+                0% {
+                    opacity: 0;
+                    top: 0%;
+                    right: 5%;
+                }
+                55% {
+                    opacity: 1;
+                    top: 55%;
+                    right: 5%;
+                }
+                100% {
+                    opacity: 1;
+                    top: 55%;
+                    right: 5%;
+                }
             }
             @keyframes anim_text_accroche03_02 {
                 0% {

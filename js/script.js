@@ -163,34 +163,37 @@ $(document).ready(function () {
 
 // Contact Form
 
-$(document).ready(function () {
-	$("#contactForm").submit(function (event) {
-		// Prevent the form submission
-		event.preventDefault();
-		submitForm();
-	});
+// $(document).ready(function () {
+// 	$("#contactForm").submit(function (event) {
+// 		// Prevent the form submission
+// 		event.preventDefault();
+// 		submitForm();
+// 		console.log('after Submit form');
+// 	});
 
-	function submitForm() {
-		// Initiate Variables With Form Content
-		var name = $("#name").val();
-		var email = $("#email").val();
-		var message = $("#message").val();
+// 	function submitForm() {
+// 		// Initiate Variables With Form Content
+// 		var name = $("#name").val();
+// 		var email = $("#email").val();
+// 		var message = $("#message").val();
+// 		var formData = { name: name, email: email, message: message };
 
-		$.ajax({
-			type: "POST",
-			url: "../php/formValidating.php",
-			data: "name=" + name + "&email=" + email + "&message=" + message,
-			success: function (text) {
-				if (text == "success") {
-					formSuccess();
-				}
-			}
-		});
-	}
-	function formSuccess() {
-		window.location.assign("../contactThankYou.html");
-	}
-});
+// 		$.ajax({
+// 			type: "POST",
+// 			url: "php/formValidating.php",
+// 			data: formData,
+// 			success: function (text) {
+// 				// if (text == "success") {
+// 				// 	formSuccess();
+// 				// }
+// 				console.log(text);
+// 			}
+// 		});
+// 	}
+// 	function formSuccess() {
+// 		window.location.assign("../contactThankYou.html");
+// 	}
+// });
 
 
 // $(function () {
@@ -243,3 +246,40 @@ $(document).ready(function () {
 
 // 	});
 // });
+
+$(document).ready(function () {
+
+	window.verifyRecaptchaCallback = function (response) {
+		$('input[data-recaptcha]').val(response).trigger('change');
+	}
+
+	window.expiredRecaptchaCallback = function () {
+		$('input[data-recaptcha]').val("").trigger('change');
+	}
+
+	$('#contactForm').validator();
+
+	$('#contactForm').on('submit', function (e) {
+		if (!e.isDefaultPrevented()) {
+			var url = "contactProcess.php";
+
+			$.ajax({
+				type: "POST",
+				url: url,
+				data: $(this).serialize(),
+				success: function (data) {
+					var messageAlert = 'alert-' + data.type;
+					var messageText = data.message;
+
+					var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+					if (messageAlert && messageText) {
+						$('#contact-form').find('.messages').html(alertBox);
+						$('#contact-form')[0].reset();
+						grecaptcha.reset();
+					}
+				}
+			});
+			return false;
+		}
+	})
+});
