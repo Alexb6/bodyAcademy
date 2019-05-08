@@ -1,16 +1,16 @@
 <?php
 // require ReCaptcha class
 require('recaptcha-master/src/autoload.php');
+$name = $_POST['name'];
 
 // configure
 // an email address that will be in the From field of the email.
-$from = 'Demo contact form <demo@domain.com>';
 
 // an email address that will receive the email with the output of the form
 $sendTo = 'lapb6@yahoo.com';
 
 // subject of the email
-$subject = 'Nouveau message venant de ';
+$subject = "Bodyacademy : nouveau message reçu de $name";
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
@@ -54,14 +54,16 @@ try {
         
         // everything went well, we can compose the message, as usually
         
-        $emailText = "Vous avez un nouveau message de \n=============================\n";
+        $emailText = "Vous avez un nouveau message de $name\n=============================\n";
 
         foreach ($_POST as $key => $value) {
             // If the field exists in the $fields array, include it in the email
             if (isset($fields[$key])) {
-                $emailText .= "$fields[$key]: $value\n";
+                $emailText .= $fields[$key] . ": $value\n";
             }
         }
+
+        $from = $_POST['email'];
     
         // All the neccessary headers for the email.
         $headers = array('Content-Type: text/plain; charset="UTF-8";',
@@ -71,12 +73,15 @@ try {
         );
         
         // Send email
-        mail($sendTo, $subject, $emailText, implode("\n", $headers));
+        $resMail = mail($sendTo, $subject, $emailText, implode("\n", $headers));
 
-        $responseArray = array('type' => 'success', 'message' => $okMessage);
+        $responseArray = array('type' => 'success', 'message' => $okMessage, 'mail' => $resMail);
+        echo json_encode($responseArray);
+        return;
     }
 } catch (\Exception $e) {
     $responseArray = array('type' => 'danger', 'message' => $e->getMessage());
+    echo json_encode($responseArray);
 }
 
 if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
