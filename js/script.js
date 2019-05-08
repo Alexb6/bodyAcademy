@@ -270,13 +270,19 @@ $(document).ready(function () {
 				success: function (res) {
 					res = JSON.parse(res);
 					// console.log(res);
+
+					// we recieve the type of the message: success x danger and apply it to the form
 					var messageAlert = 'alert-' + res.type;
 					var messageText = res.message;
 
+					// let's compose Bootstrap alert box HTML
 					var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
 					if (messageAlert && messageText) {
+						// inject the alert to .messages div in our form
 						$('#contactForm').find('.messages').html(alertBox);
+						// empty the form
 						$('#contactForm')[0].reset();
+						// empty the Recaptcha
 						grecaptcha.reset();
 					}
 				}

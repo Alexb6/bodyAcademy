@@ -8,6 +8,11 @@ Small Screen Styles (from 599px downwards)
 
 /* Styles Généraux
 ---------------------------- */
+body {
+    width: 100%;
+    height: 100%;
+}
+
 .titreH4 {
     font: 600 22px $fontTitre;
     color: $softBlack;
@@ -613,6 +618,7 @@ main {
         font-weight: 600;
         font-size: 17px;
         background-color: $primary;
+        opacity: 1;
 
         &:hover {
             background-color: $primaryActive;
@@ -642,6 +648,12 @@ main {
         border: 1px solid rgba(185, 74, 72, 0.3);
         border-radius: 5px;
     }
+
+    .help-block.with-errors {
+        color: #ff5050;
+        margin-top: 5px;
+    }
+
 }
 
 

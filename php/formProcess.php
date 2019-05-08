@@ -3,21 +3,21 @@
 require('recaptcha-master/src/autoload.php');
 $name = $_POST['name'];
 
-// configure
-// an email address that will be in the From field of the email.
+// an email address of the domaine that will be used to send the message.
+$from = 'formulaire@bodyacademy.fr';
 
 // an email address that will receive the email with the output of the form
 $sendTo = 'lapb6@yahoo.com';
 
 // subject of the email
-$subject = "Bodyacademy : nouveau message reçu de $name";
+$subject = "Bodyacademy : nouveau message de $name";
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
-$fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message');
+$fields = array('name' => 'Name', 'email' => 'Email', 'message' => 'Message');
 
 // message that will be displayed when everything is OK :)
-$okMessage = 'Votre message a été envoyé. Nous reviendrons vers vous le plus tôt !';
+$okMessage = 'Votre message a été envoyé. Nous reviendrons vers vous bientôt.';
 
 // If something goes wrong, we will display this message.
 $errorMessage = 'Il y a un problème dans l\'envoi du message. Réessayez s\'il vous plait';
@@ -62,8 +62,6 @@ try {
                 $emailText .= $fields[$key] . ": $value\n";
             }
         }
-
-        $from = $_POST['email'];
     
         // All the neccessary headers for the email.
         $headers = array('Content-Type: text/plain; charset="UTF-8";',

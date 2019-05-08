@@ -228,30 +228,36 @@
                         <h4 class="">Envoyez-nous un message</h4>
                         <form id="contactForm" method="POST" action="./php/formProcess.php" role="form"
                             data-toggle="validator">
+                            <!-- Messages appears here -->
+                            <div class="messages"></div>
+
                             <div class="formMessages"></div>
                             <div class="form-group">
                                 <label for="name"><b>Nom</b></label>
                                 <input type="text" id="name" name="name" class="form-control"
-                                    placeholder="nom et prénom">
+                                    placeholder="nom et prénom" required="required"
+                                    data-error="Veuillez entrer un nom et prénom.">
                                 <p class="help-block with-errors"></p>
                             </div>
                             <div class="form-group">
                                 <label for="email"><b>Courriel</b></label>
                                 <input type="email" id="email" name="email" class="form-control"
-                                    placeholder="votre courriel">
+                                    placeholder="votre courriel" required="required"
+                                    data-error="Veuillez entrer un courriel.">
                                 <p class="help-block with-errors"></p>
                             </div>
                             <div class="form-group">
                                 <label for="message"><b>Message</b></label>
                                 <textarea type="text" id="message" name="message" class="form-control" rows="6"
-                                    placeholder="votre message..."></textarea>
+                                    placeholder="votre message..." required="required"
+                                    data-error="Veuillez écrive un message."></textarea>
                                 <p class="help-block with-errors"></p>
                             </div>
                             <div class="form-group">
                                 <div class="g-recaptcha" data-sitekey="6LdbkqAUAAAAAOG5RavGm0pnJHlztNTINIA8krx2"
                                     data-callback="verifyRecaptchaCallback"
                                     data-expired-callback="expiredRecaptchaCallback"></div>
-                                <input class="form-control d-none" data-recaptcha="true"
+                                <input class="form-control d-none" data-recaptcha="true" required="required"
                                     data-error="Veuillez compléter le Captcha">
                                 <p class="help-block with-errors"></p>
                             </div>
