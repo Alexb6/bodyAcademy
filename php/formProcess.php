@@ -7,7 +7,7 @@ $name = $_POST['name'];
 $from = 'formulaire@bodyacademy.fr';
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'lapb6@yahoo.com';
+$sendTo = 'contact@bodyacademy.fr';
 
 // subject of the email
 $subject = "Bodyacademy : nouveau message de $name";

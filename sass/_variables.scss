@@ -78,10 +78,10 @@ $fontScript: Scriptina, sans-serif;
 // Padding Menu Desktop
 @mixin paddingMenu {
     @include breakpoint(largeScreen) {
-        padding: 13.5px 30.1px;
+        padding: 13.5px 38.6px;
     }
     @include breakpoint(largeScreen1200) {
-        padding: 13.5px 42.8px;
+        padding: 13.5px 53.5px;
     }
 }
 

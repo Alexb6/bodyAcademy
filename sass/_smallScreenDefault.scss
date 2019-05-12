@@ -11,6 +11,7 @@ Small Screen Styles (from 599px downwards)
 body {
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 
 .titreH4 {
@@ -45,7 +46,7 @@ main {
     border-left: 4px solid $secondary;
     border-right: 2px solid $secondary;
     -webkit-box-shadow: 0px 2px 5px 2px #ccc;
-            box-shadow: 0px 2px 5px 2px #ccc;
+    box-shadow: 0px 2px 5px 2px #ccc;
     border-radius: 15px 0 0 15px;
 
     &::before {
@@ -85,11 +86,11 @@ main {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;    
+    -ms-flex-align: center;
+    align-items: center;    
 }
 
 .silhouetteSwap {
@@ -133,8 +134,8 @@ main {
 ----------------------------- */
 .formationEleves {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 
     &:first-child {        
         margin-top: 60px;
@@ -168,16 +169,16 @@ main {
             background-size: cover;
             background-repeat: no-repeat;
             -webkit-box-shadow: 0px 3px 5px 2px rgba(46, 46, 46, 0.3);
-                    box-shadow: 0px 3px 5px 2px rgba(46, 46, 46, 0.3);
+            box-shadow: 0px 3px 5px 2px rgba(46, 46, 46, 0.3);
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
             -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
             -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
             &:hover { opacity: 0.5;}
 
             p {
@@ -278,8 +279,8 @@ main {
 
 .formationPros {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 
     &:first-child {        
         margin-top: 60px;
@@ -314,16 +315,16 @@ main {
             background-size: cover;
             background-repeat: no-repeat;
             -webkit-box-shadow: 0px 3px 5px 2px rgba(46, 46, 46, 0.3);
-                    box-shadow: 0px 3px 5px 2px rgba(46, 46, 46, 0.3);
+            box-shadow: 0px 3px 5px 2px rgba(46, 46, 46, 0.3);
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
             -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
             -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
             &:hover { opacity: 0.5;}
 
             p {
@@ -438,8 +439,8 @@ main {
 
 .modeles {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 
     &:first-child {        
         margin-top: 60px;
@@ -534,18 +535,18 @@ main {
             border: 1px solid $softBlack;
             border-radius: 9px 9px 50px 50px;
             -webkit-box-shadow: 0px 3px 5px 2px rgba(46, 46, 46, 0.3);
-                    box-shadow: 0px 3px 5px 2px rgba(46, 46, 46, 0.3);
+            box-shadow: 0px 3px 5px 2px rgba(46, 46, 46, 0.3);
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
             -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
             -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
 
-            &:hover { opacity: 0.8;}
+            &:hover { opacity: 0.9;}
 
             div {
                 display: block;
@@ -606,9 +607,9 @@ main {
     .g-recaptcha {
     width: 100%;
     -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    transform: scale(0.8);
     -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
+    transform-origin: 0 0;
     }
 
     .btnEnvoyer {

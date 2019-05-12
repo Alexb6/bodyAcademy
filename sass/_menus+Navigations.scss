@@ -15,11 +15,19 @@ Small & Middle Screen Navigation
 
 .mobileBanner {
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 50px;
-    max-width: 1300px;
+    width: 100%;
+    padding: 0 15px;
+    // max-width: 1300px;
     background-color: $anthracite;
     opacity: 0.9;
     color: white;
@@ -41,16 +49,11 @@ Small & Middle Screen Navigation
     top: 0;
     height: 100%;
     -webkit-transition: ease 0.3s;
-    -moz-transition: ease 0.3s;
-    -o-transition: ease 0.3s;
     transition: ease 0.3s;
 }
 
 .bodyWrapper.pushed {
     -webkit-transform: translateX(250px);
-    -moz-transform: translateX(250px);
-    -ms-transform: translateX(250px);
-    -o-transform: translateX(250px);
     transform: translateX(250px);
 }
 
@@ -64,8 +67,6 @@ Small & Middle Screen Navigation
     bottom: 0;
     left: -250px;
     -webkit-transition: ease 0.3s;
-    -moz-transition: ease 0.3s;
-    -o-transition: ease 0.3s;
     transition: ease 0.3s;
     overflow:hidden;
 }
@@ -137,9 +138,6 @@ Small & Middle Screen Navigation
 
 .panel.isOpen, .subPanel.isOpen {
     -webkit-transform: translateX(-250px);
-    -moz-transform: translateX(-250px);
-    -ms-transform: translateX(-250px);
-    -o-transform: translateX(-250px);
     transform: translateX(250px);
 }
 
@@ -185,8 +183,6 @@ Small & Middle Screen Navigation
     bottom: 0;
     right: -60px;
     -webkit-transition: ease 0.1s;
-    -moz-transition: ease 0.1s;
-    -o-transition: ease 0.1s;
     transition: ease 0.1s;
     overflow: hidden;
     z-index: 10;
@@ -195,8 +191,15 @@ Small & Middle Screen Navigation
     .shareIcons {
         margin: 0;
         list-style: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
 
         li {
@@ -209,17 +212,22 @@ Small & Middle Screen Navigation
                 position: relative;
                 top: 7px;
                 border-radius: 3px;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
                 justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
                 align-items: center;
                 margin-bottom: 6px;
                 cursor: pointer;
                 -webkit-transition: ease 0.1s;
-                -moz-transition: ease 0.1s;
-                -o-transition: ease 0.1s;
                 transition: ease 0.1s;
 
                 &:hover {
+                    -webkit-transform: scale(1.1);
                     transform: scale(1.1);
                 }
                 
@@ -234,11 +242,10 @@ Small & Middle Screen Navigation
                 width: 34px;
                 height: 34px;
                 -webkit-transition: ease 0.1s;
-                -moz-transition: ease 0.1s;
-                -o-transition: ease 0.1s;
                 transition: ease 0.1s;
 
                 &:hover {
+                    -webkit-transform: scale(1.1);
                     transform: scale(1.1);
                 }
             }
@@ -248,25 +255,16 @@ Small & Middle Screen Navigation
 
 .panelR.pushedR {
     -webkit-transform: translateX(-60px);
-    -moz-transform: translateX(-60px);
-    -ms-transform: translateX(-60px);
-    -o-transform: translateX(-60px);
     transform: translateX(-60px);
 }
 
 .panelR.isOpenR {
     -webkit-transform: translateX(-60px);
-    -moz-transform: translateX(-60px);
-    -ms-transform: translateX(-60px);
-    -o-transform: translateX(-60px);
     transform: translateX(-60px);
 }
 
 .bodyWrapper.pushedR {
     -webkit-transform: translateX(-60px);
-    -moz-transform: translateX(-60px);
-    -ms-transform: translateX(-60px);
-    -o-transform: translateX(-60px);
     transform: translateX(-60px);
 }
 
@@ -276,8 +274,14 @@ Large Screen Navigation
 ------------------------------- */
 
 .desktopBanner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 50px;
     max-width: 1300px;
@@ -285,7 +289,11 @@ Large Screen Navigation
     color: white;
 
     .displayInline {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
 
         .logo img {     
@@ -298,11 +306,10 @@ Large Screen Navigation
             height: 34px;
             margin-left: 7px;
             -webkit-transition: ease 0.1s;
-            -moz-transition: ease 0.1s;
-            -o-transition: ease 0.1s;
             transition: ease 0.1s;
 
             &:hover {
+                -webkit-transform: scale(1.1);
                 transform: scale(1.1);
             }
         }
@@ -314,14 +321,23 @@ Large Screen Navigation
     height: 50px;
     max-width: 1300px;
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 10000;
 
     .mainMenu {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;        
 
         a {
@@ -346,16 +362,25 @@ Large Screen Navigation
     height: 50px;
     max-width: 1300px;
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     border-bottom: 1px solid rgba($gray, 0.3);
+    position: -webkit-sticky;
     position: sticky;
     top: 50px;
     z-index: 10000;
     background-color: $grayVeryLight;
 
     .subMenu {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         
         a {
