@@ -1420,6 +1420,10 @@ Large Screen Navigation
   background-size: contain;
   margin-top: 1em;
 }
+.footer div {
+  padding: 0;
+  margin: 0;
+}
 .footer .adresse, .footer .renseignements, .footer .designers {
   color: #fff;
   text-align: center;
