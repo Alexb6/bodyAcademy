@@ -1,0 +1,9 @@
+AuthUserFile /home/bodyacadlr/new/.htpasswd
+
+AuthGroupFile /dev/null
+
+AuthName "bodyacademy"
+
+AuthType Basic
+
+Require valid-user
