@@ -99,6 +99,7 @@ $(document).ready(function () {
 	$('.sliderHero').slick({
 		accessibility: true,
 		dots: true,
+		arrows: false,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		autoplay: true,
